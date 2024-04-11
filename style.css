@@ -148,4 +148,11 @@ body {
     100%{
         --a: 360deg;
     }
-} 
+}
+
+
+@media screen and (max-width: 900px) {
+    .description {
+        flex-wrap: wrap;
+    }
+}
