@@ -7,7 +7,7 @@
 
 body {
     align-items: center;
-    background: linear-gradient(180deg, rgba(47,44,110,1) 0%, rgb(82, 71, 177) 51%, rgba(44,44,110,1) 100%);
+    background: linear-gradient(180deg, #6e6d9e 0%, rgb(82, 71, 177) 51%, #6e6d9e 100%);
     
     display: flex;
     justify-content: space-around;
@@ -18,20 +18,33 @@ body {
     gap: 60px;
 }
 
+.picture, .description {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.picture img {
+    max-width: 200px;
+}
+
 .description {
-    background: rgba(0,0,0,.2);
     color: #ffffff;
+    background: rgba(0,0,0,.2);
     box-shadow: inset 0 1px 20px rgba(0,0,0,.5);
     border-radius: 20px;
     filter: drop-shadow(0px 75px 100px #000);
     max-width: 1100px;
-    padding: 20px;
+    padding: 50px 20px;
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 15px;
+    flex-direction: column;
+}
+
+.intro {
+    flex-direction: row;
 }
 
 .socials {
@@ -90,8 +103,8 @@ body {
 
 .box {
     cursor: pointer;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 
     background: repeating-conic-gradient(from var(--a), #21ff19 0%, #21ff19 5%, 
                 transparent 5%, transparent 5%, transparent 40%, #21ff19 50%);
@@ -138,10 +151,10 @@ body {
     border-radius: 18px;
     box-shadow: inset 0 10px 20px rgba(0,0,0,.5);
     border-bottom: 2px solid rgba(255,255,255,.15);
-    color: #cfcfcf;
-    font-size: 2.5rem;
+    color: #f3f3f3;
+    font-size: 1.5rem;
     font-weight: bold;
-    inset: 40px;
+    inset: 30px;
     text-transform: uppercase;
     text-shadow: 2px 2px 9px #73ff00;
     position: absolute;
@@ -164,7 +177,9 @@ body {
 
 
 @media screen and (max-width: 900px) {
-    .description {
+    .description, 
+    .intro,
+    .picture {
         flex-wrap: wrap;
     }
 }
