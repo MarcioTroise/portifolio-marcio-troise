@@ -42,7 +42,7 @@ p {
 
 .picture, .description {
     display: flex;
-    gap: 35px;
+    gap: 40px;
     justify-content: space-around;
     align-items: start;
 }
@@ -66,7 +66,8 @@ p {
     flex-direction: row;
 }
 
-.description h1 {
+.description h1,
+.container-port {
     text-align: center;
     margin: 0 auto;
 }
@@ -74,8 +75,14 @@ p {
 .work-tables {
     display: flex;
     gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
+.work-tables p{
+    max-width: 450px;
+}
 .container {
     gap: 100px; 
     display: flex;
@@ -190,7 +197,7 @@ p {
 }
 .socials a:hover {
     background: #fff;
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 @keyframes animate {
