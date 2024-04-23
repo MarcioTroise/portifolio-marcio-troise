@@ -233,9 +233,6 @@ p {
     .description h1 {
         font-size: 21px;
     }
-    /* .socials {
-        gap: 20px;
-    } */
     .socials span{
         display: none;
     }
