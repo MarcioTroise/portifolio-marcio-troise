@@ -14,11 +14,6 @@ header { grid-area: hed; }
 section { grid-area: mid; }
 footer { grid-area: fot; }
 
-p {
-    font: 16px Arial, Helvetica, sans-serif;
-    line-height: 20px;
-}
-
 .page {
     width: 100%;
     margin: 0 auto;
@@ -41,9 +36,11 @@ p {
     align-items: start;
 }
 
-.picture img {
+.description img {
     max-width: 200px;
     height: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
 }
 
 .description {
@@ -54,8 +51,14 @@ p {
     filter: drop-shadow(0px 75px 100px #573c3c);
     padding: 40px;
     flex-direction: column;
+    align-items: center;
 }
 
+p {
+    font: 16px Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    margin: auto;
+}
 .intro {
     flex-direction: row;
 }
@@ -63,6 +66,11 @@ p {
 .description h1,
 .container-port {
     text-align: center;
+    margin: 0 auto;
+}
+
+.frameworks {
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -74,9 +82,6 @@ p {
     margin-bottom: 15px;
 }
 
-.work-tables p{
-    max-width: 450px;
-}
 .container {
     gap: 100px; 
     display: flex;
