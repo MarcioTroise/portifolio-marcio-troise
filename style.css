@@ -5,9 +5,9 @@
 }
 /* #944300de */
 body {
-   background: linear-gradient(180deg, #49a48a  0%, #127059 25%, #005e48 80%, #49a48a  100%);
+   background: linear-gradient(180deg, #4c445d  0%, #301d50 25%, #301d50 81%, #4c445d 100%);
     /*     background: linear-gradient(180deg, #501300  10%, #9f0000 50%, #9f0000 80%, #530000  100%); */
-    margin: 3%;
+    margin: 0 2%;
     font-family: Arial, Helvetica, sans-serif, Times, serif;
     font-family: "Saira Condensed", sans-serif;
 }
@@ -21,10 +21,10 @@ footer { grid-area: fot; }
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(auto, 1400px);
+    /* grid-template-columns: minmax(auto, 1400px); */
     grid-template-rows: 1fr;
     gap: 40px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     grid-template-areas:
     "navi"
@@ -89,8 +89,7 @@ footer { grid-area: fot; }
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), #21ff19 0%, #21ff19 5%, transparent 5%,
-                transparent 5%, transparent 40%, #21ff19 50%);
+    background: repeating-conic-gradient(from var(--a), #21ff19 20%, #21ff19 20%, transparent 30%, transparent 20%, transparent 45%, #21ff19 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;
@@ -133,10 +132,17 @@ footer { grid-area: fot; }
 .description, .about-me {
     color: #fff;
     /* background: #d6dfa9; */
-    box-shadow: inset 1px 1px 100px 10px #1b2c3c;/*030a63*/
+    box-shadow: inset 0px 0px 55px 5px #301d50;/*030a63*/
     border-radius: 20px;
     padding: 40px;
     align-items: center;
+}
+/* Ajustando as cores das sombras por seção */
+.about-me {
+    box-shadow: inset 0px 0px 55px 5px #b15c5c;/*030a63*/
+}
+.tec-tables{
+    box-shadow: inset 0px 0px 55px 5px #63b15c;/*030a63*/
 }
 
 .about-me img {
@@ -157,7 +163,7 @@ footer { grid-area: fot; }
     font-size: 24pt;
     font-weight: bold;
     width: 90%;
-    max-width: 720px;
+    max-width: 960px;
 }
 
 .intro {
@@ -165,6 +171,7 @@ footer { grid-area: fot; }
     flex-direction: row;
     justify-content: space-between;
     font-weight: 700;
+    max-width: 600px;
 }
 
 .apresentation p {
@@ -218,6 +225,14 @@ footer { grid-area: fot; }
 .contact--hd{
     flex-direction: row;
     justify-content: space-between;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 20px 35px;
+}
+
+.contact--ft {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 @property --a {
