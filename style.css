@@ -5,32 +5,31 @@
 }
 /* #944300de */
 body {
-   background: linear-gradient(180deg, #49a48a  0%, #127059 25%, #005e48 80%, #49a48a  100%);
+   background: linear-gradient(180deg, #4c445d  0%, #301d50 25%, #301d50 81%, #4c445d 100%);
     /*     background: linear-gradient(180deg, #501300  10%, #9f0000 50%, #9f0000 80%, #530000  100%); */
-    margin: 3%;
+    margin: 0 2%;
     font-family: Arial, Helvetica, sans-serif, Times, serif;
     font-family: "Saira Condensed", sans-serif;
 }
 
-nav { grid-area: navi; }
+nav { grid-area: nav; }
 header { grid-area: hed; }
-section { grid-area: mid; }
+.tec-tables { grid-area: mid; }
+.projects { grid-area: mid2; }
 footer { grid-area: fot; }
 
 .page {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(auto, 1400px);
     grid-template-rows: 1fr;
     gap: 40px;
-    justify-content: center;
     align-items: center;
     grid-template-areas:
-    "navi"
+    "nav"
     "hed"
     "mid"
-    "fot";
+    "mid2";
 }
 
 .container {
@@ -65,7 +64,7 @@ footer { grid-area: fot; }
     color: #f3f3f3;
     font-size: 1.2rem;
     font-weight: bold;
-    inset: 15px;
+    inset: 12px;
     text-transform: uppercase;
     text-shadow: 2px 2px 9px #73ff00;
     position: absolute;
@@ -84,13 +83,13 @@ footer { grid-area: fot; }
 .box:nth-child(3) {
     filter: drop-shadow(0 15px 50px #000) hue-rotate(110deg);
 }
+
 .box::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), #21ff19 0%, #21ff19 5%, transparent 5%,
-                transparent 5%, transparent 40%, #21ff19 50%);
+    background: repeating-conic-gradient(from var(--a), #21ff19 20%, #19ffff 20%, transparent 30%, transparent 20%, transparent 45%, #21ff19 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;
@@ -109,7 +108,7 @@ footer { grid-area: fot; }
     border: 5px solid #282833;
     background: #2b2b39;
     border-radius: 15px;
-    outline: 7px double #282833c4;
+    outline: 5px double #332e35c9;
 }
 
 .description h1,
@@ -133,12 +132,25 @@ footer { grid-area: fot; }
 .description, .about-me {
     color: #fff;
     /* background: #d6dfa9; */
-    box-shadow: inset 1px 1px 100px 10px #1b2c3c;/*030a63*/
+    box-shadow: inset 0px 0px 35px 5px #502ca3;/*030a63*/
     border-radius: 20px;
     padding: 40px;
     align-items: center;
 }
-
+/* Ajustando as cores das sombras por seção */
+/* .about-me {
+    border: 1px groove #ffb7008f;
+    box-shadow: inset 0px 0px 35px 5px #030a63;
+}
+.tec-tables{
+    border: 1px groove #14efdda3;
+    box-shadow: inset 0px 0px 35px 5px #4c8b46af;
+}
+.tec-tables{
+    border: 1px groove #14efdda3;
+    box-shadow: inset 0px 0px 35px 5px #63b15c;
+} */
+/* Termino sombreamento */
 .about-me img {
     max-width: 250px;
     height: 250px;
@@ -157,7 +169,7 @@ footer { grid-area: fot; }
     font-size: 24pt;
     font-weight: bold;
     width: 90%;
-    max-width: 720px;
+    max-width: 960px;
 }
 
 .intro {
@@ -165,6 +177,7 @@ footer { grid-area: fot; }
     flex-direction: row;
     justify-content: space-between;
     font-weight: 700;
+    max-width: 600px;
 }
 
 .apresentation p {
@@ -189,18 +202,16 @@ footer { grid-area: fot; }
 
 .socials {
     display: flex;
-    justify-content: flex-start;
-    gap: 19%;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
+   
     margin: 0;
-}
-.socials span {
-    font-weight: bold;
-    font-size: 20px;
+    width: 100%;
+    max-width: 250px;
 }
 .socials a{
-    text-shadow: 2px 20px 3px #8bab9c;
+    text-shadow: 0px 20px 3px #8bab9c;
     border-radius: 50%;
     scale: 1.4;
     text-decoration: none;
@@ -215,9 +226,22 @@ footer { grid-area: fot; }
     transform: scale(1.1)
 }
 
+.socials span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .contact--hd{
     flex-direction: row;
     justify-content: space-between;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 20px 35px;
+}
+
+.contact--ft {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 @property --a {
@@ -238,9 +262,6 @@ footer { grid-area: fot; }
 @media screen and (max-width: 980px) {
     .about-me, .intro, .contact--hd{
         flex-direction: column;
-    }
-    .socials {
-        justify-content: center;
     }
 }
 @media screen and (max-width: 720px) {
