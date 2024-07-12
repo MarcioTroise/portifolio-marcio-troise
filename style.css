@@ -5,7 +5,7 @@
 }
 /* #944300de */
 body {
-   background: linear-gradient(180deg, #4c445d  0%, #301d50 25%, #301d50 81%, #4c445d 100%);
+   background: linear-gradient(180deg, #443a5c  0%, #23133f 25%, #23133f 81%, #4c445d 100%);
     /*     background: linear-gradient(180deg, #501300  10%, #9f0000 50%, #9f0000 80%, #530000  100%); */
     margin: 0 2%;
     font-family: Arial, Helvetica, sans-serif, Times, serif;
@@ -15,12 +15,13 @@ body {
 nav { grid-area: nav; }
 header { grid-area: hed; }
 .tec-tables { grid-area: mid; }
-.projects { grid-area: mid2; }
+.work-projects { grid-area: mid2; }
 footer { grid-area: fot; }
 
 .page {
     width: 100%;
     margin: 0 auto;
+    max-width: 1500px;
     display: grid;
     grid-template-rows: 1fr;
     gap: 40px;
@@ -186,7 +187,6 @@ footer { grid-area: fot; }
     font-size: 16pt;
 }
 
-
 .frameworks {
     max-width: 400px;
     margin: 0 auto;
@@ -225,10 +225,16 @@ footer { grid-area: fot; }
     background: #fff;
     transform: scale(1.1)
 }
-
 .socials span {
     font-weight: bold;
     font-size: 20px;
+}
+
+.box-games {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    display: block;
 }
 
 .contact--hd{
