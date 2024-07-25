@@ -2,23 +2,14 @@
 
 // margin do body vai para 2% em tudo e fechar o menu com width 5px
 
-var menu = document.getElementById("btnOpenClose");
+var menuSide = document.getElementById("btnOpenClose");
+var menuClass = document.querySelector(".container-menu");
 
-function openCloseMenu(open, close) {
-    let openMenu, closeMenu
-    openMenu = open
-    closeMenu = close
+menuClass.classList.remove("hiden")
 
-    if (open) {
-        console.log("Abriu")
-        console.log("menuu",menu)
-    }
-    else if (close) {
-        console.log("Fechou!")
-        return close
-    }
-    console.log(open, "ssssssss")
+menuSide.addEventListener("click", (() => {
+    menuClass.classList.add("hiden")
 
-}
+    if(!menuClass) console.log("fechando...")
 
-openCloseMenu()
+}));

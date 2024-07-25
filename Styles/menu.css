@@ -1,9 +1,5 @@
 .contact--hd {
     position: fixed;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
     font-family: "Saira Condensed", sans-serif;
     color: #fff;
     font-size: 14pt;
@@ -11,6 +7,22 @@
     width: 16%;
     left: 0;
     bottom: 0;
+    transition: 2s;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+}
+.hiden {
+    display: none;
 }
 
 .contact--hd, #btnOpenClose:after {
@@ -32,6 +44,7 @@
     border-bottom: 4px solid #8c86e1b9;
     cursor: pointer;
 }
+
 
 .intro {
     display: flex;
