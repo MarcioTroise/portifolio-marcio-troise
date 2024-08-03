@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/Scripts/carousel/owl/owl-style/owl.theme.default.min.css">
 
 </head>
-<body>
+<body> <!--  add background to body class (or color in JS) backbodyWhite"-->
     <div class="page">
         <nav class="contact--hd" id="btnOpenClose">
             <div class="container-menu hiden">
@@ -25,15 +25,16 @@
                     <a href="https://github.com/marciotroise" target="_blank" style="color: black;"><i class="fab fa-github"></i></a>
                     <a href="https://web.whatsapp.com/send?phone=5511986922549" target="_blank" style="color: green;"><i class="fab fa-whatsapp"></i></a>
                 </span>
+
+                <div class="themes">
+                    <button id="theme-"></button>
+                    <button id="theme-"></button>
+                    <button id="theme-"></button>
+                </div>
                 
-                <div class="picture-marcio">
-                    <a src="https://github.com/marciotroise" alt="Foto Marcio">
-                        <img src="https://avatars.githubusercontent.com/u/66261090?v=4" alt="Jogo FPS" class="box-image">
-                    </a>
-                    <div class="intro">
-                        <span>Marcio Antonio Troise</span>
-                        <span style="">Frontend Developer</span>
-                    </div>
+                <div class="intro">
+                    <span>Marcio Antonio Troise</span>
+                    <span style="">Frontend Developer</span>
                 </div>
                 <div class="container-port">
                     <div class="container boxes">
@@ -51,14 +52,20 @@
             </div>
         </nav>
 
-        <header class="about-me">
+        <header class="about-me 
+        layout-white"> <!--containers-white -->
+            <div class="picture-marcio">
+                <a src="https://github.com/marciotroise" alt="Foto Marcio">
+                    <img src="https://avatars.githubusercontent.com/u/66261090?v=4" alt="Jogo FPS" class="box-image">
+                </a>
+            </div>
             <div class="apresentation">
                 <p>
                     Marcio, 33 anos, Frontend desde 2022 - São Paulo, SP<br>
                     Superior em Análise e Desenvolvimento de Sistemas (ADS).
                 </p>
                 <p class="description-text">
-                    Ajustes, criação e manutenção de sites/layout, criados em <b>Html</b>, e através das frameworks <b>JavaScript</b>, <b>VueJS</b> e <b>ReactJS</b>.<br>
+                    Conhecimento em ajustes, criação e manutenção de sites/layout, criados em <b>Html</b>, e através das frameworks <b>JavaScript</b>, <b>VueJS</b> e <b>ReactJS</b>.<br>
                      Estilização com CSS, Stylus e SASS.<br>
                      Criaçãode tabelas.
                      Criação e estilização em <b>Wordpress</b>.
@@ -66,7 +73,7 @@
                 </p>
             </div>
         </header>
-        <section class="description tec-tables">
+        <section class="description tec-tables"> <!--containers-white -->
             <p class="description-text">
                 Nas tabelas seguintes serve como um exemplo com notas de 1 a 10 relacionado ao meu conhecimento das ferramentas citadas a cima. Sendo, 1 pouco conhecimento e 10 total conhecimento sobre. 
             </p>
@@ -81,21 +88,21 @@
                         </tr>
                         <tr>
                             <td width="80%" style="font-weight:bold;padding-left: 5px;"> Html </td>
-                            <td width="20%" style="border: 1px solid #e3ff43;text-align: center;font-weight:bold;border-radius: 7px;padding: 2px; color: chartreuse;"> 8 </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" width="100%" height="1" style="background-color: #e3ff43;"></td>
-                        </tr>
-                        <tr>
-                            <td width="80%" style="font-weight:bold;padding-left: 5px;"> JavaScript </td>
                             <td width="20%" style="border: 1px solid #e3ff43;text-align: center;font-weight:bold;border-radius: 7px;padding: 2px; color: chartreuse;"> 7 </td>
                         </tr>
                         <tr>
                             <td colspan="2" width="100%" height="1" style="background-color: #e3ff43;"></td>
                         </tr>
                         <tr>
-                            <td width="80%" style="font-weight:bold;border-left: px solid #e3ff43;padding-left: 5px;"> VueJS </td>
+                            <td width="80%" style="font-weight:bold;padding-left: 5px;"> JavaScript </td>
                             <td width="20%" style="border: 1px solid #e3ff43;text-align: center;font-weight:bold;border-radius: 7px;padding: 2px; color: chartreuse;"> 6 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="100%" height="1" style="background-color: #e3ff43;"></td>
+                        </tr>
+                        <tr>
+                            <td width="80%" style="font-weight:bold;border-left: px solid #e3ff43;padding-left: 5px;"> VueJS </td>
+                            <td width="20%" style="border: 1px solid #e3ff43;text-align: center;font-weight:bold;border-radius: 7px;padding: 2px; color: yellow;"> 5 </td>
                         </tr>
                         <tr>
                             <td colspan="2" width="100%" height="1" style="background-color: #e3ff43;"></td>
@@ -174,7 +181,7 @@
             </div>
         </section>
 
-        <section class="description work-projects">
+        <section class="description work-projects"> <!--containers-white -->
             <div class="carrosel-games">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
@@ -199,7 +206,7 @@
             </div>
         </section>
 
-        <footer class="description contact--ft">
+        <footer class="description contact--ft"> <!--containers-white -->
             <span class="socials">
                 <a href="https://www.linkedin.com/in/marcio-troise-a79531a4/" target="_blank" style="color: blue;"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/marciotroise" target="_blank" style="color: purple;"><i class="fab fa-instagram"></i></a>
