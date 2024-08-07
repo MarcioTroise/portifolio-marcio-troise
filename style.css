@@ -1,24 +1,28 @@
 @import "Styles/menu.css";
+
+:root {
+    --blue: #0012b7;
+    --purple-smooth: #8c86e1;
+    --purple: #464789;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 /* #944300de */
 body {
-    background: #464789;
+    background: var(--purple);
     margin: 50px 2% 0 18%;
     font-family: Arial, Helvetica, sans-serif, Times, serif;
 }
 
 header { grid-area: hed; }
-.tec-tables { grid-area: mid; }
-.work-projects { grid-area: mid2; }
 .contact--ft { grid-area: fot; }
 
 .page {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     max-width: 1500px;
     display: grid;
     grid-template-rows: 1fr;
@@ -27,7 +31,6 @@ header { grid-area: hed; }
     grid-template-areas:
     "hed"
     "mid"
-    "mid2"
     "fot";
 }
 header, section, footer {
@@ -44,17 +47,18 @@ header, section, footer {
     display: flex;
     gap: 40px;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
 }
 
 .about-me {
     flex-direction: row;
+    width: 100%;
 }
 
-.description, .about-me {
+.description {
     color: #000;
-    box-shadow: 1px 1px 10px 10px #8c86e1;
+    box-shadow: 1px 1px 10px 10px var(--purple-smooth);
     border-radius: 20px;
     padding: 40px;
     align-items: center;
@@ -63,7 +67,7 @@ header, section, footer {
 .picture-marcio img{
     width: 200px;
     max-width: 100%;
-    border: 2px solid #340096;
+    border: 2px solid var(--blue);
     border-radius: 50%;
 }
 
@@ -81,12 +85,13 @@ header, section, footer {
 .description-text {
     font-weight: 400;
     line-height: 1.25;
-    margin: auto;
+    font: 1.2rem "Fira Sans", sans-serif;
 }
 
 .apresentation {
-    font-size: 24pt;
+    font-size: 26pt;
     font-weight: bold;
+    color: var(--blue);
     width: 90%;
     max-width: 960px;
 }
@@ -94,12 +99,14 @@ header, section, footer {
 .apresentation p {
     margin: auto;
     padding: 15px 0;
-    font-size: 16pt;
+    line-height: 1.5;
+    font-size: 18pt;
 }
 
 .frameworks {
     max-width: 400px;
     margin: 0 auto;
+    background: no-repeat center/60% url("/Images/image-table-2.png");
 }
 
 .work-tables {
