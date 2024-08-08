@@ -1,18 +1,21 @@
 @import "Styles/menu.css";
 
 :root {
-    --blue: #0012b7;
-    --purple-smooth: #8c86e1;
-    --purple: #464789;
+    --blue: #002871;
+    --blue-green-smooth: #4cd5c8;
+    border-radius: 20px;
+    --grenn-smooth: #a0dfc5;
+    --green: #005753;
 }
 
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     padding: 0;
 }
 /* #944300de */
 body {
-    background: var(--purple);
+    background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%);;
     margin: 50px 2% 0 18%;
     font-family: Arial, Helvetica, sans-serif, Times, serif;
 }
@@ -34,8 +37,8 @@ header { grid-area: hed; }
     "fot";
 }
 header, section, footer {
-    text-shadow: 0 4px 15px 20px #fff;
-    background-color: rgb(213, 219, 255);
+    text-shadow: 4px 15px 20px #fff;
+    background-color: rgb(224 255 255);
 }
 
 .description h1 {
@@ -58,7 +61,7 @@ header, section, footer {
 
 .description {
     color: #000;
-    box-shadow: 1px 1px 10px 10px var(--purple-smooth);
+    box-shadow: 1px 1px 17px 11px var(--blue-green-smooth);
     border-radius: 20px;
     padding: 40px;
     align-items: center;
@@ -91,7 +94,7 @@ header, section, footer {
 .apresentation {
     font-size: 26pt;
     font-weight: bold;
-    color: var(--blue);
+    color: var(--green);
     width: 90%;
     max-width: 960px;
 }
