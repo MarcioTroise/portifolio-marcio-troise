@@ -1,10 +1,10 @@
 @import "Styles/menu.css";
+@import "Styles/projects.css";
 
 :root {
     --blue: #002871;
     --blue-green-smooth: #4cd5c8;
-    border-radius: 20px;
-    --grenn-smooth: #a0dfc5;
+    --green-smooth: #a0dfc5;
     --green: #005753;
 }
 
@@ -12,29 +12,30 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
 }
 /* #944300de */
 body {
     background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%);;
-    margin: 50px 2% 0 18%;
     font-family: Arial, Helvetica, sans-serif, Times, serif;
+    margin: 0;
 }
 
-header { grid-area: hed; }
-.contact--ft { grid-area: fot; }
+header { grid-area: top; }
+.work-projects { grid-area: mid; }
+.contact--ft { grid-area: bot; }
 
 .page {
-    width: 100%;
-    margin: auto;
+    margin: 50px 2% 0 17%;
     max-width: 1500px;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 80px;
     gap: 40px;
     align-items: center;
     grid-template-areas:
-    "hed"
+    "top"
     "mid"
-    "fot";
+    "bot";
 }
 header, section, footer {
     text-shadow: 4px 15px 20px #fff;
@@ -106,18 +107,29 @@ header, section, footer {
     font-size: 18pt;
 }
 
-.frameworks {
-    max-width: 400px;
-    margin: 0 auto;
-    background: no-repeat center/60% url("/Images/image-table-2.png");
-}
-
 .work-tables {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.frameworks {
+    background: #fff;
+    height: 80px;
+
+    border-radius: 40%;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    max-width: 80px;
+}
+
+.frameworks img {
+    width: 100%;
+    padding: 10px;
 }
 
 .socials {
@@ -138,7 +150,7 @@ header, section, footer {
     background: #dad9d9;
 }
 .socials a i {
-    padding: 5px;
+    padding: 6px;
 }
 .socials a:hover {
     background: #fff;
@@ -157,19 +169,18 @@ header, section, footer {
 }
 
 .contact--ft {
+    flex-direction: row;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-color: rgba(0,0,0,.2);
+    padding: 30px;
 }
 
-@media screen and (max-width: 980px) {
-}
-@media screen and (max-width: 720px) {
-    .description,.about-me {
-        flex-wrap: wrap;
+@media screen and (max-width: 900px) {
+    .page {
+        margin: 2% 2% 0;
     }
-    .work-tables  {
-        flex-direction: column;    
+    .description, .about-me {
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 490px) {
