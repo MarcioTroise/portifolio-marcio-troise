@@ -31,13 +31,13 @@
     top: 0;
     background: rgba(0,0,0,.85);
     border-radius: 0 0 15px 0;
-    border: 2px solid var(--blue-green-smooth);
+    border: 1px solid var(--blue-green-smooth);
 }
 
 #btnOpenClose {
     background: #000;
     border-radius: 5px;
-    border: 2px solid var(--blue-green-smooth);
+    border: 1px solid var(--blue-green-smooth);
     height: 40px;
     left: 0;
     top: 0;
@@ -84,17 +84,17 @@
     width: 150px;
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
-    box-shadow: 0px 5px 10px 0px #b8ff9ac7;
+    box-shadow: 0px 3px 4px 0px #b8ff9ac7;
 }
 
-.box h2 {
+.box p {
     background: rgba(0,0,0,.2);
     border-radius: 18px;
     box-shadow: inset 0 10px 10px rgba(0,0,0,.5);
     color: #f3f3f3;
-    font-size: 18px;
+    font-size: 10.3pt;
     font-weight: bold;
-    inset: 9px;
+    inset: 10px;
     text-transform: uppercase;
     text-shadow: 2px 2px 9px #73ff00;
     position: absolute;
@@ -106,9 +106,6 @@
     margin: 0;
 }
 
-.wp h2 {
-    font-size: 18px !important;
-}
 .box:nth-child(1) {
     filter: drop-shadow(0 15px 50px #000) hue-rotate(240deg);
 }
@@ -128,6 +125,20 @@
     border-radius: 20px;
 }
 
+.container {
+    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dlw-cur {
+    padding: 5px;
+    transition: .3s;
+}
+
 .box:hover,
 .box:hover::before {
     animation-play-state: running;
@@ -143,13 +154,11 @@
     outline: 6px double #332e35c9;
 }
 
-.container {
-    gap: 20px; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#dlw-cur:hover {
+    background: #FFF;
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
 }
 
 @property --a {

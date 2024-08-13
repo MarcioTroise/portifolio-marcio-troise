@@ -17,7 +17,6 @@
 /* #944300de */
 body {
     background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%);;
-    font-family: Arial, Helvetica, sans-serif, Times, serif;
     margin: 0;
 }
 
@@ -40,6 +39,11 @@ header { grid-area: top; }
 header, section, footer {
     text-shadow: 4px 15px 20px #fff;
     background-color: rgb(224 255 255);
+}
+
+h1, h2, h3, p {
+    color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .description h1 {
@@ -69,9 +73,9 @@ header, section, footer {
 }
 
 .picture-marcio img{
-    width: 200px;
+    width: 250px;
     max-width: 100%;
-    border: 2px solid var(--blue);
+    border: 2px solid var(--green);
     border-radius: 50%;
 }
 
@@ -105,6 +109,7 @@ header, section, footer {
     padding: 15px 0;
     line-height: 1.5;
     font-size: 18pt;
+    text-shadow: 3px 3px 4px #a3f6ff;
 }
 
 .work-tables {
@@ -143,14 +148,14 @@ header, section, footer {
     max-width: 250px;
 }
 .socials a{
-    text-shadow: 0px 20px 5px #adadad;
+    text-shadow: 0px 20px 5px #c7cbff;
     border-radius: 50%;
-    scale: 1.3;
+    scale: 1.2;
     text-decoration: none;
-    background: #dad9d9;
+    background: #c7cbff;
 }
 .socials a i {
-    padding: 6px;
+    padding: 5px 6px;
 }
 .socials a:hover {
     background: #fff;
