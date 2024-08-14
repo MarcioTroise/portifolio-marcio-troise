@@ -16,8 +16,16 @@
 }
 /* #944300de */
 body {
-    background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%);;
     margin: 0;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%);
+
 }
 
 header { grid-area: top; }
@@ -25,11 +33,12 @@ header { grid-area: top; }
 .contact--ft { grid-area: bot; }
 
 .page {
-    margin: 50px 2% 0 calc(250px + 2%);
-    max-width: 1500px;
+    /* margin: 50px 2% 0 calc(250px + 2%); */
+    margin: 50px 2% 0;
     display: grid;
     grid-template-rows: 1fr 1fr 80px;
     gap: 40px;
+    width: 100%;
     align-items: center;
     grid-template-areas:
     "top"
@@ -181,13 +190,14 @@ h1, h2, h3, p {
     padding: 30px;
 }
 
-@media screen and (max-width: 900px) {
-    .page {
-        margin: 2% 2% 0;
-    }
+@media screen and (max-width: 720px) {
     .description, .about-me {
         flex-wrap: wrap;
     }
+    #portfolio {
+        justify-content: center;
+    }
+    
 }
 @media screen and (max-width: 490px) {
     .description,.about-me {
