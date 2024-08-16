@@ -1,24 +1,7 @@
-@import "Styles/menu.css";
-@import "Styles/projects.css";
-@import "Styles/frameworks.css";
 
-:root {
-    --blue: #002871;
-    --blue-green-smooth: #4cd5c8;
-    --green-smooth: #a0dfc5;
-    --green: #005753;
-    --border-green: #2c5955;
-}
-
-* {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0;
-    scroll-behavior: smooth;
-}
+@import "Styles/variables.css";
 /* #944300de */
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,7 +10,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%);
+    background: linear-gradient(180deg, #007468 0%, rgba(135,231,230,1) 50%, #007468 100%);
+    /* background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%); */
 
 }
 
@@ -55,7 +39,7 @@ header, section, footer {
 }
 
 h1, h2, h3, p {
-    color: var(--green);
+    color: var(--green-dark);
 }
 
 .description h1 {

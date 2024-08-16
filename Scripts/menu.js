@@ -8,6 +8,7 @@ const menu = document.querySelector(".contact--hd");
 
 // Função para alternar a visibilidade do menu
 function toggleMenu() {
+    sideMenu.style.transition ='2s'
     if (sideMenu.style.display === 'block') 
       { // Esconde o menu se ele estiver visível     
         sideMenu.style.display = 'none';
