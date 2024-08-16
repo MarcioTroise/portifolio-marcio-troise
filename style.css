@@ -26,7 +26,6 @@ header { grid-area: top; }
     grid-template-rows: 1fr 1fr 80px;
     gap: 40px;
     width: 100%;
-    align-items: center;
     grid-template-areas:
     "top"
     "mid"
@@ -39,11 +38,12 @@ header, section, footer {
 
 h1, h2, h3, p {
     color: var(--green-dark);
+    margin: 0 auto;
 }
 
 .description h1 {
-    text-align: center;
-    margin: 0;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px #0091338c;
 }
 
 .description, .about-me {
@@ -92,8 +92,9 @@ h1, h2, h3, p {
 }
 
 .apresentation {
-    font-size: 26pt;
+    font-size: 18pt;
     font-weight: bold;
+    text-align: left;
     color: var(--green);
     width: 90%;
     max-width: 960px;
@@ -162,9 +163,6 @@ h1, h2, h3, p {
 @media screen and (max-width: 490px) {
     .description,.about-me {
         padding: 20px;
-    }
-    .description h1 {
-        font-size: 21px;
     }
     .socials span{
         display: none;
