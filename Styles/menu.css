@@ -30,7 +30,7 @@
     top: 0;
     background: rgba(0,0,0,.85);
     border-radius: 0 0 15px 0;
-    border: 1px solid var(--blue-green-smooth);
+    border: 1px solid var(--border-green);
 }
 
 #btnOpenClose {
@@ -81,7 +81,7 @@
     border-radius: 18px;
     box-shadow: inset 0 10px 10px rgba(0,0,0,.5);
     color: #f3f3f3;
-    font-size: 10.3pt;
+    font-size: 14pt;
     font-weight: bold;
     inset: 10px;
     text-transform: uppercase;

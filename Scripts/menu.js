@@ -8,12 +8,11 @@ const menu = document.querySelector(".contact--hd");
 
 // Função para alternar a visibilidade do menu
 function toggleMenu() {
-    if (sideMenu.style.display == 'block' || sideMenu.style.display === '' || page.style.justifyContent == "" ) 
-      { // Esconde o menu se ele estiver visível       
-        page.style.justifyContent = "center";
+    if (sideMenu.style.display === 'block') 
+      { // Esconde o menu se ele estiver visível     
         sideMenu.style.display = 'none';
-    } else { // Mostra o menu se ele estiver escondido
-        page.style.justifyContent = "space-between";
+    }
+    else { // Mostra o menu se ele estiver escondido
         sideMenu.style.display = 'block'; 
     }
 }
