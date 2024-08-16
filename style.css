@@ -31,7 +31,6 @@ header { grid-area: top; }
     "top"
     "mid"
     "bot";
-    transition: 1s;
 }
 header, section, footer {
     text-shadow: 4px 15px 20px #fff;
@@ -86,7 +85,7 @@ h1, h2, h3, p {
 }
 /* End white container */
 
-.description-text {
+.tec-tables {
     font-weight: 400;
     line-height: 1.25;
     font: 1.2rem "Fira Sans", sans-serif;
@@ -102,7 +101,6 @@ h1, h2, h3, p {
 
 .apresentation p {
     margin: auto;
-    padding: 15px 0;
     line-height: 1.5;
     font-size: 18pt;
     text-shadow: 3px 3px 4px #a3f6ff;
