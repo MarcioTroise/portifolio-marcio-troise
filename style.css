@@ -11,8 +11,6 @@ body {
     justify-content: space-between;
     width: 100%;
     background: linear-gradient(180deg, #007468 0%, rgba(135,231,230,1) 50%, #007468 100%);
-    /* background: linear-gradient(180deg, rgba(112,209,150,1) 0%, rgba(135,231,230,1) 50%, rgba(112,209,150,1) 100%); */
-
 }
 
 header { grid-area: top; }
@@ -20,7 +18,6 @@ header { grid-area: top; }
 .contact--ft { grid-area: bot; }
 
 .page {
-    /* margin: 50px 2% 0 calc(250px + 2%); */
     margin: 50px 2% 0;
     display: grid;
     grid-template-rows: 1fr 1fr 80px;
@@ -43,7 +40,8 @@ h1, h2, h3, p {
 
 .description h1 {
     padding-bottom: 20px;
-    text-shadow: 2px 2px 2px #0091338c;
+    text-shadow: 4px 4px 3px #0091338c;
+    font-size: 48pt;
 }
 
 .description, .about-me {

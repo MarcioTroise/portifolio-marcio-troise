@@ -18,7 +18,7 @@ function getApiGH() {
             data.map(item => {
                 // pra cada item na API irá criar um li
                 let li = document.createElement('li')
-
+                li.className.add =
                 // Criando o HTML dessa 'li'
                 // item. o nome do que quero puxar da api
                 li.innerHTML = `
