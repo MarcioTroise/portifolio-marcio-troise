@@ -29,7 +29,7 @@
    object-fit: contain;
 }
 .frameworks::before {
-   content: attr(data);
+   content: attr(data-title);
    color: white;
    font-weight: bold;
    width: 100%;
@@ -68,36 +68,4 @@
    width: 0;
    transition: width .4s;
    
-}
-
-[data-vue]::after,
-[data-html]::after,
-[data-css]::after,
-[data-js]::after,
-[data-react]::after {
-   content: " ";
-   border-radius:5%;
-   padding: 2px 4px;
-   color: #fff;
-}
-
-[data-vue]::after {
-   content: attr(data-vue) "";
-   background-color: green;
-}
-[data-html]::after {
-   content: attr(data-html) "";
-   background-color: red;
-}
-[data-css]::after {
-   content: attr(data-css) "";
-   background-color: cornflowerblue;
-}
-[data-js]::after {
-   content: attr(data-js) "";
-   background-color: yellow;
-}
-[data-react]::after {
-   content: attr(data-react) "";
-   background-color: blue;
 }

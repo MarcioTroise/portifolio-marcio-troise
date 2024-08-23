@@ -1,6 +1,7 @@
 .project-git {
    width: 100%;
    margin: 0 auto;
+   color: #fff;
 }
 
 .project-git img {
@@ -20,7 +21,7 @@
    list-style: none;
    max-width: 550px;
    width: 100%;
-   background-color: burlywood;
+   background: linear-gradient(207deg, #3a4261e0 0%, rgb(77 189 255) 50%, #3a4261e0 100%);
    padding: 15px;
    border-radius: 16px;
    display: flex;
@@ -36,6 +37,10 @@
    justify-content: center;
    width: 100%;
    gap: 20px;
+}
+
+.desc-project {
+   text-align: left;
 }
 
 @media screen and (max-width: 590px) {
