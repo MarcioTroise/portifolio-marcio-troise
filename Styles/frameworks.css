@@ -19,6 +19,7 @@
       max-width: 100%;
       background: linear-gradient(245deg, #161616c4, transparent);
       transition: width 1.3s;
+      box-shadow: inset 0px 1px 16px 0px;
    }
 
 .frameworks img {
@@ -28,7 +29,7 @@
    object-fit: contain;
 }
 .frameworks::before {
-   content: attr(data-title);
+   content: attr(data);
    color: white;
    font-weight: bold;
    width: 100%;
@@ -59,13 +60,44 @@
 
 
 .frameworks:hover {
-
-   transition: .6s;
-
+   box-shadow: none;
+   transition: .4s;
 }  
 
 .frameworks:hover::after {
    width: 0;
    transition: width .4s;
    
+}
+
+[data-vue]::after,
+[data-html]::after,
+[data-css]::after,
+[data-js]::after,
+[data-react]::after {
+   content: " ";
+   border-radius:5%;
+   padding: 2px 4px;
+   color: #fff;
+}
+
+[data-vue]::after {
+   content: attr(data-vue) "";
+   background-color: green;
+}
+[data-html]::after {
+   content: attr(data-html) "";
+   background-color: red;
+}
+[data-css]::after {
+   content: attr(data-css) "";
+   background-color: cornflowerblue;
+}
+[data-js]::after {
+   content: attr(data-js) "";
+   background-color: yellow;
+}
+[data-react]::after {
+   content: attr(data-react) "";
+   background-color: blue;
 }

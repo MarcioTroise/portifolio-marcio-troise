@@ -10,6 +10,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
     background: linear-gradient(180deg, #007468 0%, rgba(135,231,230,1) 50%, #007468 100%);
 }
 
@@ -20,7 +21,7 @@ header { grid-area: top; }
 .page {
     margin: 50px 2% 0;
     display: grid;
-    grid-template-rows: 1fr 1fr 80px;
+    grid-template-rows: 1fr;
     gap: 40px;
     width: 100%;
     grid-template-areas:
@@ -29,7 +30,6 @@ header { grid-area: top; }
     "bot";
 }
 header, section, footer {
-    text-shadow: 4px 15px 20px #fff;
     background-color: rgb(224 255 255);
 }
 
@@ -41,7 +41,7 @@ h1, h2, h3, p {
 .description h1 {
     padding-bottom: 20px;
     text-shadow: 4px 4px 3px #0091338c;
-    font-size: 48pt;
+    font-size: 42pt;
 }
 
 .description, .about-me {
