@@ -44,7 +44,7 @@ h1, h2, h3, p {
     font-size: 42pt;
 }
 
-.description, .about-me {
+.description, .about-me,.description-ft {
     display: flex;
     gap: 40px;
     justify-content: space-around;
@@ -55,14 +55,18 @@ h1, h2, h3, p {
 .about-me {
     flex-direction: row;
     width: 100%;
+    position: relative;
 }
 
-.description {
+.description, .description-ft {
     color: #000;
     box-shadow: 1px 1px 17px 11px var(--blue-green-smooth);
     border-radius: 20px;
     padding: 40px;
     align-items: center;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
 }
 
 .picture-marcio img{
@@ -159,7 +163,7 @@ h1, h2, h3, p {
     
 }
 @media screen and (max-width: 490px) {
-    .description,.about-me {
+    .description,.about-me,.description-ft {
         padding: 20px;
     }
     .socials span{

@@ -19,3 +19,14 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+
+.shape {
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;    
+}
+  
+.circle {
+    border-radius: 50%;
+}
+  
