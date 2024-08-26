@@ -4,12 +4,13 @@
 
 :root {
     --blue: #002871;
-    --blue-green-smooth: #4cd5c8;
-    --green-smooth: #a0dfc5;
+    --blue-green-smooth: #FFA500;
+    --green-smooth: #FFFFE0;
     --green: #005753;
-    --green-dark: #0e3935;
+    --green-dark: #640000;
     --green-sea: #007468;
     --border-green: #2c5955;
+    --yellow-smooth: #F0E68C;
 }
 
 * {
@@ -22,11 +23,12 @@
 
 .shape {
     position: absolute;
-    opacity: 0.2;
-    z-index: -1;    
+    opacity: 0.1;
+    z-index: -1;
+    transform: rotate(220deg);
 }
   
 .circle {
-    border-radius: 50%;
+    border-radius: 10%;
 }
   

@@ -30,7 +30,6 @@
     top: 0;
     background: rgba(0,0,0,.85);
     border-radius: 0 0 15px 0;
-    border: 1px solid var(--border-green);
 }
 
 #btnOpenClose {
@@ -40,21 +39,21 @@
     position: fixed;
     width: 252px;
     z-index: 100;
-    color: #a7ff04;
+    color: #fbff04;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
 }
 
-.intro {
+.intro { 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     font-weight: 800;
     font-size: 1.5rem;
-    text-shadow: 0px 7px 5px #464789;
+    text-shadow: 0px 7px 5px #a79d44;
 }
 
 .picture-marcio {
@@ -73,7 +72,7 @@
     width: 150px;
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
-    box-shadow: 0px 3px 4px 0px #b8ff9ac7;
+    box-shadow: 0px 3px 4px 0px #ffd09ac7;
 }
 
 .box p {
@@ -85,7 +84,7 @@
     font-weight: bold;
     inset: 10px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 9px #73ff00;
+    text-shadow: 2px 2px 9px #FFA500;
     position: absolute;
     z-index: 10;
     display: flex;
@@ -95,19 +94,12 @@
     margin: 0;
 }
 
-.box:nth-child(1) {
-    filter: drop-shadow(0 15px 50px #000) hue-rotate(240deg);
-}
-.box:nth-child(3) {
-    filter: drop-shadow(0 15px 50px #000) hue-rotate(110deg);
-}
-
 .box::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), #21ff19 20%, #19ffff 20%, transparent 30%, transparent 20%, transparent 45%, #21ff19 70%);
+    background: repeating-conic-gradient(from var(--a), red 20%, #FFA500 20%, transparent 30%, transparent 20%, transparent 45%, red 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;

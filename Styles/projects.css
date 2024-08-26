@@ -21,7 +21,7 @@
    list-style: none;
    max-width: 550px;
    width: 100%;
-   background: linear-gradient(207deg, #3a4261e0 0%, rgb(77 189 255) 50%, #3a4261e0 100%);
+   background: linear-gradient(207deg, red 0%, var(--yellow-smooth) 50%, var(--green-dark) 100%);
    padding: 15px;
    border-radius: 16px;
    display: flex;

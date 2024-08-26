@@ -51,7 +51,7 @@
    right: 0;
    width: 20%;
    height: 25%;
-   background: linear-gradient(234deg, rgb(224 255 255) 36%, #005753 50%, rgba(0, 0, 0, 0.822) 50%, rgba(79, 79, 79, 0.815) 75%, #5f5f5f 75%, #414040ce);
+   background: linear-gradient(234deg, var(--green-smooth) 36%, #005753 50%, rgba(0, 0, 0, 0.822) 50%, rgba(79, 79, 79, 0.815) 75%, #5f5f5f 75%, #414040ce);
    z-index: 1;
    border-bottom-left-radius: 6px;
    pointer-events: none;
