@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
       shape.style.top = `${posY}px`;
       
       // Cor de fundo aleatória
-      const colors = [ '#FFA500', '#810000'];
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      const colors = [ '#bfdbd5', '#00ff9dd7', '#00eb0091'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];  
       shape.style.backgroundColor = randomColor;
 
       shape.classList.add('shape'); // Adicionar a classe 'shape' ao final
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
    // Iterar por todos os containers e adicionar formas a cada um
    containers.forEach(function(container) {
       // Gerar quantidades de formas geométricas aleatórias para cada container
-      // let variableSize =  (containers[0].clientWidth -  containers[0].clientHeight) / 10
+      // let variableSize =  (containers[0].clientHeight -  containers[0].clientWidth) / 10
       // console.log('TESTE S',(containers[0]))
-      for (let i = 0; i < 55; i++) {
+      for (let i = 0; i < 70; i++) {
          createShape(container);
       }
    });

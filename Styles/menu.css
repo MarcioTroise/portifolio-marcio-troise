@@ -28,12 +28,11 @@
 
 .contact--hd, #btnOpenClose {
     top: 0;
-    background: rgba(0,0,0,.85);
+    background: #09372cf5;
     border-radius: 0 0 15px 0;
 }
 
 #btnOpenClose {
-    border-radius: 5px;
     height: 40px;
     left: 0;
     position: fixed;
@@ -99,7 +98,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), red 20%, #FFA500 20%, transparent 30%, transparent 20%, transparent 45%, red 70%);
+    background: repeating-conic-gradient(from var(--a), var(--border-shadow) 20%, var(--green-shadow) 20%, transparent 30%, transparent 20%, transparent 45%, var(--border-shadow) 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;

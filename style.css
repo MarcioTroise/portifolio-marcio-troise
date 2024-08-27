@@ -1,21 +1,7 @@
 
 @import "Styles/variables.css";
-/* #944300de */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-#portfolio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #B22222 0%, #ff6a00 50%, #B22222 100%);
-    /* background: linear-gradient(180deg, #007468 0%, rgba(135,231,230,1) 50%, #007468 100%); */
-}
-
-header { grid-area: top; }
+header { grid-area: top; height: 90vh;}
 .work-projects { grid-area: mid; }
 .contact--ft { grid-area: bot; }
 
@@ -31,17 +17,17 @@ header { grid-area: top; }
     "bot";
 }
 header, section, footer {
-    background-color: var(--green-smooth);
+    background-color: var(--background);
 }
 
 h1, h2, h3, p {
-    color: var(--green-dark);
+    color: var(--text);
     margin: 0 auto;
 }
 
 .description h1 {
     padding-bottom: 20px;
-    text-shadow: 4px 4px 3px #c09700cc;
+    text-shadow: 2px 2px 4px var(--sm-smooth);
     font-size: 42pt;
 }
 
@@ -61,7 +47,7 @@ h1, h2, h3, p {
 
 .description, .description-ft {
     color: #000;
-    box-shadow: 1px 1px 20px 5px var(--yellow-smooth);
+    box-shadow: 1px 1px 15px 5px var(--border-shadow);
     border-radius: 20px;
     padding: 40px;
     align-items: center;
@@ -73,14 +59,14 @@ h1, h2, h3, p {
 .picture-marcio img{
     width: 250px;
     max-width: 100%;
-    border: 2px solid var(--green);
+    border: 2px solid var(--dark);
     border-radius: 50%;
 }
 
 .tec-tables {
     font-weight: 400;
     line-height: 1.25;
-    font: 1.2rem "Fira Sans", sans-serif;
+    font: 1.1rem "Fira Sans", sans-serif;
 }
 
 .apresentation {
@@ -141,7 +127,12 @@ h1, h2, h3, p {
     padding: 30px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
+    header {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 580px) {
     .description, .about-me {
         flex-wrap: wrap;
     }
