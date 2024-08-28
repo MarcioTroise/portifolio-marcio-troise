@@ -3,15 +3,14 @@
 @import "frameworks.css";
 
 :root {
-    --dark: #01a3bd;
+    --dark: #0188bd;
     --color-smooth: #c0f0ce;
-    --sm-smooth: #0e9e0e;
-    --background: #c1fff1;
-    --border-shadow: #00ffddbb;
-    --button: #0b1817;
-    --green-shadow: greenyellow;
+    --sm-smooth: #8100c1;
+    --background: #e9e3fd;
+    --border-shadow: #8f6cd5;
+    --button: #b1a9ff;
     --aqua:#01bda7;
-    --text: #133000;
+    --text: #1a002cf2;
 }
 
 * {

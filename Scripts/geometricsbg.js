@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Definir tamanho aleatório para as formas
       const size = Math.random() * 60 + 20; // Tamanho entre 50px e 150px
       shape.style.width = `${size}px`;
-      shape.style.height = `2%`;
+      shape.style.height = `4px`;
 
       shape.classList.add('circle');
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       shape.style.top = `${posY}px`;
       
       // Cor de fundo aleatória
-      const colors = [ '#bfdbd5', '#00ff9dd7', '#00eb0091'];
+      const colors = [ '#250937f2', '#0188bd'];
       const randomColor = colors[Math.floor(Math.random() * colors.length)];  
       shape.style.backgroundColor = randomColor;
 

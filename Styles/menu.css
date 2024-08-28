@@ -28,7 +28,7 @@
 
 .contact--hd, #btnOpenClose {
     top: 0;
-    background: #09372cf5;
+    background: var(--text);
     border-radius: 0 0 15px 0;
 }
 
@@ -79,7 +79,7 @@
     border-radius: 18px;
     box-shadow: inset 0 10px 10px rgba(0,0,0,.5);
     color: #f3f3f3;
-    font-size: 14pt;
+    font-size: 18px;
     font-weight: bold;
     inset: 10px;
     text-transform: uppercase;
@@ -98,7 +98,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), var(--border-shadow) 20%, var(--green-shadow) 20%, transparent 30%, transparent 20%, transparent 45%, var(--border-shadow) 70%);
+    background: repeating-conic-gradient(from var(--a), var(--button) 20%, var(--aqua) 20%, transparent 30%, transparent 20%, transparent 45%, var(--button) 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;

@@ -26,9 +26,8 @@ h1, h2, h3, p {
 }
 
 .description h1 {
-    padding-bottom: 20px;
-    text-shadow: 2px 2px 4px var(--sm-smooth);
     font-size: 42pt;
+    padding-bottom: 20px;
 }
 
 .description, .about-me,.description-ft {
@@ -37,6 +36,17 @@ h1, h2, h3, p {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    text-shadow: 2px 2px 4px var(--border-shadow);
+}
+
+.description-text {
+    max-width: 85%;
+}
+
+.description-text li {
+    padding: 5px 0;
+    color: #000 !important;
+    font-size: 20px;
 }
 
 .about-me {
@@ -59,7 +69,7 @@ h1, h2, h3, p {
 .picture-marcio img{
     width: 250px;
     max-width: 100%;
-    border: 2px solid var(--dark);
+    border: 2px solid var(--text);
     border-radius: 50%;
 }
 
@@ -81,6 +91,10 @@ h1, h2, h3, p {
     margin: auto;
     line-height: 1.5;
     font-size: 18pt;
+}
+
+.readMore {
+   width: 270px;
 }
 
 .socials {
