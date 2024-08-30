@@ -3,7 +3,7 @@
     background: linear-gradient(90deg, #ffffff 25%,var(--text-btn) 75%);
     height: 4px;
     position: absolute;
-    right: 4%;
+    right: 3%;
     top: 10px;
     border-radius: 10px;
     transition: 0.6s;
@@ -64,7 +64,7 @@
     height: 40px;
     left: 0;
     position: fixed;
-    width: 280px;
+    width: 270px;
     z-index: 100;
     font-size: 24px;
     font-weight: bold;
@@ -201,6 +201,9 @@
     }
     #btnOpenClose, .container-menu, .contact--hd, .page{
         width: 100%;
+    }
+    #btnOpenClose {
+        border-radius: 0;
     }
     
     .description, .about-me {

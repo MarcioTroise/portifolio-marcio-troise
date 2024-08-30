@@ -1,3 +1,7 @@
+#work-projects h2 {
+   font-size: 2rem;
+}
+
 .project-git {
    width: 100%;
    margin: 0 auto;
@@ -21,7 +25,9 @@
    list-style: none;
    max-width: 550px;
    width: 100%;
-   background: linear-gradient(207deg, red 0%, var(--yellow-smooth) 50%, var(--green-dark) 100%);
+   background: #b0bccf;
+   box-shadow: 5px 5px 10px #000; 
+   /* linear-gradient(207deg, var(--text) 0%, var(--button) 50%, var(--border-shadow) 100%); */
    padding: 15px;
    border-radius: 16px;
    display: flex;
@@ -29,14 +35,16 @@
    justify-content: space-between;
    align-items: center;
    gap: 10px;
+   height: 100%;
 }
 
 .project-git div {
    display: flex;
+   box-shadow: inset rgb(0, 0, 0) 5px 5px 20px 0px;
    flex-direction: row;
+   gap: 20px;
    justify-content: center;
    width: 100%;
-   gap: 20px;
 }
 
 .desc-project {
