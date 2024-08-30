@@ -1,7 +1,7 @@
 
 @import "Styles/variables.css";
 
-header { grid-area: top; height: 90vh;}
+header { grid-area: top; min-height: 90vh;height: 100%;}
 .work-projects { grid-area: mid; }
 .contact--ft { grid-area: bot; }
 
@@ -25,9 +25,19 @@ h1, h2, h3, p {
     margin: 0 auto;
 }
 
+p {
+    font-size: 14pt;
+}
+
 .description h1 {
     font-size: 42pt;
     padding-bottom: 20px;
+    
+    background-image: linear-gradient(90deg, #05002cf2 41%, #0018c1 45%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--text);
 }
 
 .description, .about-me,.description-ft {
@@ -36,7 +46,7 @@ h1, h2, h3, p {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    text-shadow: 2px 2px 4px var(--border-shadow);
+    text-shadow: 2px 2px 4px #8f6cd5b3;
 }
 
 .description-text {
@@ -45,7 +55,6 @@ h1, h2, h3, p {
 
 .description-text li {
     padding: 5px 0;
-    color: #000 !important;
     font-size: 20px;
 }
 
@@ -90,7 +99,6 @@ h1, h2, h3, p {
 .apresentation p {
     margin: auto;
     line-height: 1.5;
-    font-size: 18pt;
 }
 
 .readMore {
@@ -156,6 +164,12 @@ h1, h2, h3, p {
     
 }
 @media screen and (max-width: 490px) {
+    .apresentation {
+        font-size: 15pt;
+    }
+    .description h1 {
+        font-size: 22pt;
+    }
     .description,.about-me,.description-ft {
         padding: 20px;
     }
@@ -164,6 +178,7 @@ h1, h2, h3, p {
         flex-direction: row;
     }
     .contact--ft {
+        flex-direction: column;
         padding: 30px 20px !important;
     }
 }

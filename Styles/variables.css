@@ -4,13 +4,13 @@
 
 :root {
     --dark: #0188bd;
-    --color-smooth: #c0f0ce;
     --sm-smooth: #8100c1;
     --background: #e9e3fd;
     --border-shadow: #8f6cd5;
-    --button: #b1a9ff;
-    --aqua:#01bda7;
-    --text: #1a002cf2;
+    --button: #cfcaff;
+    --aqua:#73b3ff;
+    --text: #1a002c;
+    --text-btn: #6dfff3;
 }
 
 * {
