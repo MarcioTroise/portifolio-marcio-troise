@@ -1,7 +1,12 @@
 
 @import "Styles/variables.css";
 
-header { grid-area: top; min-height: 90vh;height: 100%;}
+header { 
+    grid-area: top;
+    min-height: 91vh;
+    height: 100%;
+    border-top-color: #0018c1 !important;
+}
 .work-projects { grid-area: mid; }
 .contact--ft { grid-area: bot; }
 
@@ -30,14 +35,10 @@ p {
 }
 
 .description h1 {
+    color: var(--text);
     font-size: 42pt;
     padding-bottom: 20px;
-    
-    background-image: linear-gradient(90deg, #05002cf2 41%, #0018c1 45%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--text);
+    text-shadow: 3px 3px 2px var(--dark);
 }
 
 .description, .about-me,.description-ft {
@@ -68,7 +69,7 @@ p {
 
 .description, .description-ft {
     color: #000;
-    box-shadow: 1px 1px 15px 5px var(--border-shadow);
+    box-shadow: 1px 1px 15px 8px var(--border-shadow);
     border-radius: 20px;
     padding: 40px;
     align-items: center;

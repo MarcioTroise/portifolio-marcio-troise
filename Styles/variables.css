@@ -4,12 +4,12 @@
 
 :root {
     --dark: #0188bd;
-    --sm-smooth: #8100c1;
-    --background: #e9e3fd;
-    --border-shadow: #8f6cd5;
+    --sm-smooth: #0054c1;
+    --background: #f0f3ff;
+    --border-shadow: #7b79e9;
     --button: #cfcaff;
     --aqua:#73b3ff;
-    --text: #1a002c;
+    --text: #03002b;
     --text-btn: #6dfff3;
 }
 
@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, var(--dark) 0%, var(--sm-smooth) 50%, var(--dark) 100%);
+    background: linear-gradient(180deg, var(--text) 0%, var(--sm-smooth) 50%, var(--text) 100%);
     z-index: 1;
     position: relative;
 }
@@ -47,7 +47,6 @@ body {
 }
   
 .circle {
-    filter: drop-shadow();
     border-radius: 50%;
     border: 4px solid transparent;
     border-right-color: #fff;

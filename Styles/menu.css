@@ -20,7 +20,6 @@
 #btnOpenClose .line:nth-child(3) {
     transform: translateY(7px) rotate(45deg);
 }
-
 #btnOpenClose.rotate-menu .line {
     transform: none;
     opacity: 1;
@@ -46,7 +45,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    height: 91%;
+    height: 85vh;
     width: 205px;
     position: fixed;
 }
@@ -61,17 +60,18 @@
 }
 
 .btn-menu {
+    border: none;
+    box-shadow: -5px 1px 20px 1px var(--border-shadow);
     height: 40px;
     left: 0;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
     position: fixed;
     width: 270px;
     z-index: 100;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
 }
 
 .intro { 
@@ -82,11 +82,6 @@
     font-weight: 800;
     font-size: 1.5rem;
     text-shadow: 0px 7px 5px #a79d44;
-}
-
-.picture-marcio {
-    text-align: center;
-    max-width: 100%;
 }
 
 .box {
@@ -134,6 +129,18 @@
     border-radius: 20px;
 }
 
+#dlw-cur {
+    top: 50px;
+    height: 70px;
+    text-wrap: wrap;
+    display: flex;
+
+}
+
+#dlw-cur i {
+    z-index: 101;
+}
+
 .container {
     gap: 20px; 
     display: flex;
@@ -141,11 +148,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#dlw-cur {
-    padding: 5px;
-    transition: .3s;
 }
 
 .box:hover,
@@ -161,13 +163,6 @@
     background: #2b2b39;
     border-radius: 15px;
     outline: 6px double #332e35c9;
-}
-
-#dlw-cur:hover {
-    background: #FFF;
-    color: #000;
-    font-weight: bold;
-    border-radius: 12px;
 }
 
 @keyframes rotate {
