@@ -55,7 +55,7 @@
 
 .contact--hd, .btn-menu {
     top: 0;
-    background: var(--text);
+    background: #03002bec;
     border-radius: 0 0 10px 0;
 }
 
@@ -131,16 +131,23 @@
 
 #dlw-cur {
     top: 50px;
-    height: 70px;
+    width: 165px;
     text-wrap: wrap;
     display: flex;
-
+    justify-content: space-between;
+    position: relative;
 }
 
 #dlw-cur i {
-    z-index: 101;
+    position: absolute;
+    left: 8px;
+    margin-bottom: 3px;
 }
-
+#dlw-cur p {
+    font-size: 15px !important;
+    text-align: right;
+    padding-left: 15px;
+}
 .container {
     gap: 20px; 
     display: flex;
