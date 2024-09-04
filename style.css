@@ -185,3 +185,32 @@ p {
         padding: 30px 20px !important;
     }
 }
+
+/* Frameworks colors */
+.html-bg {
+    background-color: var(--html-bg);
+}
+.css-bg {
+    background-color: var(--css-bg);
+}
+.js-bg {
+    background-color: var(--js-bg);
+}
+.react-bg {
+    background-color: var(--react-bg);
+}
+.vue-bg {
+    background-color: var(--vue-bg);
+}
+.sass-bg {
+    background-color: var(--sass-bg);
+}
+.node-bg {
+    background-color: var(--node-bg);
+}
+.wp-bg {
+    background-color: var(--wp-bg);
+}
+.docker-bg {
+    background-color: var(---bg);
+}

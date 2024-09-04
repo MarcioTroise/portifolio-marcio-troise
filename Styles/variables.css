@@ -11,6 +11,16 @@
     --aqua:#73b3ff;
     --text: #03002b;
     --text-btn: #6dfff3;
+
+    --html-bg: #c9003cc4 ;
+    --css-bg: #0039d4c9 ;
+    --js-bg: #ffff00c5 ;
+    --react-bg: #00ccffa4 ;
+    --vue-bg: #29700098 ;
+    --sass-bg: #d300b7b7 ;
+    --node-bg: #1f9c00ce ;
+    --wp-bg: #0053cfce ;
+    --docker-bg: #acacac ;
 }
 
 * {
