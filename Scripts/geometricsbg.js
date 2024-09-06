@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
    const containers = document.querySelectorAll('.description');
+   // const portfolio = document.querySelectorAll('#portfolio');
 
    // Função para criar uma forma geométrica dentro de um container
    function createShape(container) {
@@ -33,11 +34,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
    // Iterar por todos os containers e adicionar formas a cada um
    containers.forEach(function(container) {
-      // Gerar quantidades de formas geométricas aleatórias para cada container
-      // let variableSize =  (containers[0].clientHeight -  containers[0].clientWidth) / 10
-      // console.log('TESTE S',(containers[0]))
       for (let i = 0; i < 30; i++) {
          createShape(container);
       }
    });
+   // portfolio.forEach(function(container) {
+   //    // Gerar quantidades de formas geométricas aleatórias para cada container
+   //    let variableSize =  (containers[0].clientWidth - containers[0].clientHeight) / 5
+   //    console.log('TESTE S',variableSize)
+
+   //    for (let i = 0; i < variableSize; i++) {
+   //       createShape(container);
+   //    }
+   // });
 });

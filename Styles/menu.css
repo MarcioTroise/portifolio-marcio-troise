@@ -38,51 +38,54 @@
 }
 
 .contact--hd {
-    position: relative;
+    position: absolute;
     font-family: "Saira Condensed", sans-serif;
     color: #fff;
     font-size: 13pt;
-    padding: 55px 7px 30px;
-    width: 280px;
-    left: 0;
-    bottom: 0;
+    padding: 20px 15px;
+    width: 100%;
     overflow: auto;
     z-index: 99;
     transition: all 1s ease-in-out;
 }
 
 .container-menu {
+    box-shadow: inset 0px -10px 20px 0px var(--border-shadow);
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     text-align: center;
-    height: 85vh;
-    width: 205px;
+    height: 80px;
+    width: 100%;
     position: fixed;
-}
-.hiden {
-    display: none;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 0;
+    border-radius: 0 0 14px 14px;
 }
 
-.contact--hd, .btn-menu {
+.contact--hd, .btn-menu, .container-menu {
     top: 0;
-    background: #03002bec;
-    border-radius: 0 0 10px 0;
+    background: #03002bf0;
+}
+
+.hiden {
+    display: none;
 }
 
 .btn-menu {
     border: none;
     box-shadow: -5px 1px 20px 1px var(--border-shadow);
     height: 40px;
-    left: 0;
+    right: 0;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     color: #ffffff;
     text-align: center;
     position: fixed;
-    width: 270px;
+    width: 14%;
     z-index: 100;
 }
 
@@ -142,12 +145,10 @@
 }
 
 #dlw-cur {
-    top: 50px;
     width: 165px;
     text-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 #dlw-cur i {
@@ -165,7 +166,7 @@
     gap: 20px; 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -183,6 +184,20 @@
     background: #2b2b39;
     border-radius: 15px;
     outline: 6px double #332e35c9;
+}
+
+.my-email {
+    font-size: 16px;
+}
+
+.themes {
+    margin-top: 40px;
+    margin-right: -2%;
+    width: 150px;
+    height: 40px;
+}
+.themes a {
+    padding: 0 10px;
 }
 
 @keyframes rotate {
@@ -209,7 +224,7 @@
     }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
     .contact--hd  {
         display: none;
         position: fixed;
@@ -217,8 +232,16 @@
     #btnOpenClose, .container-menu, .contact--hd, .page{
         width: 100%;
     }
+    .container-menu {
+        height: 100vh;
+        flex-direction: column;
+    }
     #btnOpenClose {
         border-radius: 0;
+        display: block;
+    }
+    .container {
+        flex-direction: column;
     }
     
     .description, .about-me {
