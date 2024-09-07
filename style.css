@@ -10,14 +10,14 @@ header {
 .contact--ft { grid-area: bot; }
 
 .description h1 {
-    font-size: 42pt;
+    font-size: 40pt;
     padding-bottom: 20px;
     text-shadow: 3px 3px 2px var(--dark);
 }
 
 .description, .about-me,.description-ft {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -45,7 +45,7 @@ header {
 .description, .description-ft {
     box-shadow: 1px 1px 15px 8px var(--border-shadow);
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
     align-items: center;
     z-index: 2;
     overflow: hidden;

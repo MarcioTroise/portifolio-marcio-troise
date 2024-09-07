@@ -1,3 +1,6 @@
+#btnOpenClose  {
+    display: none;
+}
 #btnOpenClose span {
     width: 25px;
     height: 4px;
@@ -50,7 +53,7 @@
 }
 
 .container-menu {
-    box-shadow: inset 0px -10px 20px 0px var(--border-shadow);
+    box-shadow: inset 0px -1px 20px 0px var(--border-shadow);
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -87,6 +90,22 @@
     position: fixed;
     width: 14%;
     z-index: 100;
+}
+
+.themes {
+    max-width: 150px;
+}
+
+.themes img {
+    border-radius: 50%;
+    width: 50px;
+    height: 42px;
+    padding: 5px;
+    filter: saturate(.5);
+}
+
+.themes img:hover {
+    filter: saturate(1);
 }
 
 .intro { 
@@ -190,16 +209,6 @@
     font-size: 16px;
 }
 
-.themes {
-    margin-top: 40px;
-    margin-right: -2%;
-    width: 150px;
-    height: 40px;
-}
-.themes a {
-    padding: 0 10px;
-}
-
 @keyframes rotate {
     0% {
         --a: 0deg;
@@ -238,7 +247,7 @@
     }
     #btnOpenClose {
         border-radius: 0;
-        display: block;
+        display: block !important;
     }
     .container {
         flex-direction: column;
