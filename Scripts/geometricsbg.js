@@ -1,50 +1,57 @@
 document.addEventListener("DOMContentLoaded", function() {
-   const containers = document.querySelectorAll('.description');
-   // const portfolio = document.querySelectorAll('#portfolio');
+   const portfolio = document.querySelectorAll('#portfolio');
 
    // Função para criar uma forma geométrica dentro de um container
-   function createShape(container) {
-      const shape = document.createElement('div');
-      
+   function createcirclebody(container) {
+      const circlebody = document.createElement('div');
+      // Armazena ambos os elementos em um array
+      const elements = [circlebody];
       // Definir tamanho aleatório para as formas
       const size = Math.random() * 80 + 20; // Tamanho entre 50px e 150px
-      shape.style.width = `${size}px`;
-      shape.style.height = `${size}px`;
-      shape.style.position = 'absolute';
-      
-      shape.classList.add('circle');
 
+      // Define a largura padrão para ambos
+      elements.forEach(el => {
+         el.style.height = `${size}px`;
+         el.style.width = `${size}px`;
+         el.classList.add('circle');
+         // Aplicar a animação de movimento
+         el.style.animation = `moveUp ${Math.random() * 15 + 5}s linear infinite`;
+         // Tempo aleatorio para animacao
+         el.style.animationDelay = `${Math.random() * 10}s`;
+      });
+      
       // Definir posição aleatória dentro do container (inicial embaixo)
       const posX = Math.random() * (container.clientWidth - size);
-      shape.style.left = `${posX}px`;
-      shape.style.top = `${container.clientHeight}px`; // Começa de baixo
+      circlebody.style.left = `${posX}px`;
+      circlebody.style.top = `${container.clientHeight}px`; // Começa de baixo
 
       // Cor de fundo aleatória
       const colors = [ '#250937f2', '#0188bd', '#6dfff3'];
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      shape.style.backgroundColor = randomColor;
+      circlebody.style.backgroundColor = randomColor;
 
       // Adicionar classes de animação e forma
-      shape.classList.add('shape');
-      container.appendChild(shape);
-
-      // Aplicar a animação de movimento
-      shape.style.animation = `moveUp ${Math.random() * 15 + 5}s linear infinite`;
+      circlebody.classList.add('circlebody');
+      container.appendChild(circlebody, circlebody);
    }
 
-   // Iterar por todos os containers e adicionar formas a cada um
-   containers.forEach(function(container) {
-      for (let i = 0; i < 30; i++) {
-         createShape(container);
+   portfolio.forEach(function(container) {
+      for (let i = 0; i < 180; i++) {
+         createcirclebody(container);
       }
    });
-   // portfolio.forEach(function(container) {
-   //    // Gerar quantidades de formas geométricas aleatórias para cada container
-   //    let variableSize =  (containers[0].clientWidth - containers[0].clientHeight) / 5
-   //    console.log('TESTE S',variableSize)
 
-   //    for (let i = 0; i < variableSize; i++) {
-   //       createShape(container);
-   //    }
-   // });
+   // Isso garantirá que as bolhas sejam reposicionadas quando a tela for redimensionada
+   function repositionBubbles(container) {
+      const bubbles = container.querySelectorAll('.circlebody');
+      bubbles.forEach(function(bubble) {
+         const size = parseFloat(bubble.style.width);
+         const posX = Math.random() * (container.clientWidth - size);
+         bubble.style.left = `${posX}px`;
+      });
+   }
+   
+   window.addEventListener('resize', function() {
+      portfolio.forEach(repositionBubbles);
+   });
 });

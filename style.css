@@ -23,7 +23,6 @@ header {
     flex-direction: column;
     text-shadow: 2px 2px 4px #ffffffe3;
     max-width: 1200px;
-    overflow: hidden;
 }
 
 .description-text {

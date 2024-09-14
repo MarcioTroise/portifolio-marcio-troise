@@ -16,7 +16,7 @@ function toggleMenu() {
     }
     else { // Mostra o menu se ele estiver escondido
         sideMenu.style.display = 'block'; 
-    }
+    } 
 }
 
 // Adiciona o evento de clique ao botão para alternar o menu
