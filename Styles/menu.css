@@ -257,3 +257,9 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (min-width: 980px){
+    #sideMenu {
+        display: block !important;
+    }
+}
