@@ -3,6 +3,8 @@
 @import "frameworks.css";
 
 :root {
+    font-size: 62.5%;
+
     --dark: #0188bd;
     --sm-smooth: #0054c1;
     --background: #f0f3ff;
@@ -59,7 +61,7 @@ h1, h2, h3, p {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 1.6rem;
 }
 #portfolio, .description {
     overflow: hidden;
@@ -77,14 +79,14 @@ p {
 
 /* Circulos internos */
 .circlebody {
-    opacity: .1;
-    z-index: -1;
     filter: blur(4px);
     overflow: hidden;
     position: absolute;
 }
 
 .circle {
+    opacity: .1;
+    z-index: -1;
     border-radius: 50%;
     border: 4px solid transparent;
     border-right-color: #fff;

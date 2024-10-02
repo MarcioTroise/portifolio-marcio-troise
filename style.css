@@ -119,9 +119,10 @@ header {
 }
 
 .contact--ft {
-    flex-direction: row;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    flex-direction: row;
+    font-size: 1.5rem;
     padding: 30px;
 }
 .social-footer {
