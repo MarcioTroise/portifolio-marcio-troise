@@ -3,6 +3,7 @@ const toggleButton = document.getElementById("btnOpenClose");
 const sideMenu = document.getElementById('sideMenu');
 const page = document.getElementById("portfolio")
 const menu = document.querySelector(".contact--hd");
+const allContainers = document.getElementsByClassName(".description")
 
 // menu.classList.remove("hiden") // Menu Hiden
 
@@ -13,9 +14,11 @@ function toggleMenu() {
     if (sideMenu.style.display === 'block') 
       { // Esconde o menu se ele estiver visível     
         sideMenu.style.display = 'none';
+        allContainers.style.display = 'block'; 
     }
     else { // Mostra o menu se ele estiver escondido
         sideMenu.style.display = 'block'; 
+        allContainers.style.display = 'none'
     } 
 }
 

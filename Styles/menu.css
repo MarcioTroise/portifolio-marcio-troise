@@ -65,12 +65,13 @@
     align-content: center;
     flex-wrap: wrap;
     left: 0;
+    backdrop-filter: blur(12px);
     border-radius: 0 0 14px 14px;
 }
 
 .contact--hd, .btn-menu, .container-menu {
     top: 0;
-    background: #03002bf0;
+    background: #03002b9a;
 }
 
 .hiden {
@@ -248,6 +249,7 @@
     #btnOpenClose {
         border-radius: 0;
         display: block !important;
+        backdrop-filter: blur(12px);
     }
     .container {
         flex-direction: column;
