@@ -239,6 +239,9 @@
         display: none;
         position: fixed;
     }
+    .btn-menu, .container-menu {
+        background: #03002bc9;
+    }
     #btnOpenClose, .container-menu, .contact--hd, .page{
         width: 100%;
     }
