@@ -99,14 +99,13 @@
 
 .themes img {
     border-radius: 50%;
-    width: 50px;
+    width: 42px;
     height: 42px;
     padding: 5px;
-    filter: saturate(.5);
 }
 
 .themes img:hover {
-    filter: saturate(1);
+    filter: saturate(0.5);
 }
 
 .intro { 
