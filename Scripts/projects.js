@@ -1,20 +1,43 @@
 function openImage(nImage) {
-   //pegar o ID das imagens identando com a numeracao da imagem (project-1 com img-1)... testar com switch
-   const pictures = document.getElementById('project-' + nImage)
-   // condição de quando clicado na imagem criar uma classe 
-   if (nImage === nImage) {
-      pictures.classList.add("showImage")
+   const pictures = document.getElementById('project-' + nImage);
 
-      document.querySelector('.closeBtn').addEventListener("click", () => {
-         console.log('1111111111 asdi asdias')
-         pictures.classList.remove("showImage")
-      });
-      if (event.keyCode == 27) {
-         console.log('2222222222222 asdi asdias')
-         pictures.classList.remove("showImage")
-      }
+   // Verifica se o span já existe
+   let createPrhase = pictures.querySelector('.closeMessage');
+   if (!createPrhase) {
+       createPrhase = document.createElement('span');
+       createPrhase.className = 'closeMessage';
+       createPrhase.innerText = "Click na imagem para fechar...";
+       createPrhase.style.display = 'none';
+       pictures.appendChild(createPrhase);
    }
 
+   // Alterna a classe showImage ao clicar
+   if (pictures.classList.contains("showImage")) {
+       pictures.classList.remove("showImage");
+       createPrhase.style.display = 'none';
+       document.removeEventListener('keydown', handleKeydown); // Remove o evento ESC
+   } else {
+       pictures.classList.add("showImage");
+       createPrhase.style.display = 'block';
+       document.addEventListener('keydown', handleKeydown); // Adiciona o evento ESC
+   }
+
+   // Ajusta comportamento no mobile
+   if (window.innerWidth <= 768) { // Detecta mobile
+       pictures.style.top = '0'; // Ajusta a posição ou
+      //  pictures.classList.remove("showImage"); // Remove no mobile se necessário
+   }
 }
 
-
+// Função para lidar com a tecla ESC
+function handleKeydown(event) {
+   if (event.key === 'Escape') {
+       const openImages = document.querySelectorAll('.showImage');
+       openImages.forEach(image => {
+           image.classList.remove('showImage');
+           const span = image.querySelector('.closeMessage');
+           if (span) span.style.display = 'none';
+       });
+       document.removeEventListener('keydown', handleKeydown); // Remove o evento para evitar acúmulo
+   }
+}
