@@ -160,9 +160,8 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw; /* Largura total da viewport */
-      height: 100vh; /* Altura total da viewport */
-      background: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+      width: 100vw;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -172,7 +171,7 @@
   .showImage img {
       max-width: 100%;
       max-height: 100%;
-      object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
+      object-fit: contain;
       z-index: 999;  
   }
 
