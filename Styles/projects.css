@@ -17,7 +17,7 @@
    align-content: center;
    cursor: pointer;
    max-width: 240px;
-   width: 100%;
+   width: 40%;
    height: 200px;
    border: 1px solid black;
    border-radius: 10px;
@@ -106,6 +106,7 @@
    flex-wrap: wrap;
    padding: 20px;
    text-align: left;
+   width: 60%;
 }
 
 .desc-project span {
@@ -151,9 +152,10 @@
       height: auto;
    }
 
-   .img-project {
+   .img-project, .desc-project {
       height: auto;
       max-width: 100%;
+      width: 100%;
    }
 
    .showImage {
