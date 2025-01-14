@@ -22,9 +22,11 @@
    border: 1px solid black;
    border-radius: 10px;
 }
+
 .img-project div {
    height: 100%;
 }
+
 .img-project img {
    border-radius: 10px;
    object-fit: cover;
@@ -44,11 +46,13 @@
    background: rgb(0 0 0 / 84%);
    text-align: center;
 }
+
 .showImage img {
    padding: 5%;
    max-width: 100%;
    max-height: 100%;
 }
+
 .showImage span {
    display: block !important;
    cursor: pointer;
@@ -60,6 +64,7 @@
    font-size: 24pt;
    color: #fff;
 }
+
 /* --- Fim ação das imagens */
 
 .project-git ul {
@@ -75,9 +80,8 @@
    max-width: 530px;
    width: 100%;
    box-shadow: 5px 5px 10px #000;
-   background: rgb(184,210,255);
-   background: linear-gradient(180deg, rgba(184,210,255,1) 0%, rgb(197 244 255) 25%, rgb(197 244 255) 75%,#e6c5ff);
-   /* background: linear-gradient(207deg, var(--text) 0%, var(--button) 50%, var(--border-shadow) 100%); */
+   background: rgb(184, 210, 255);
+   background: linear-gradient(180deg, rgba(184, 210, 255, 1) 0%, rgb(197 244 255) 25%, rgb(197 244 255) 75%, #e6c5ff);
    padding: 15px;
    border-radius: 16px;
    display: flex;
@@ -118,7 +122,7 @@
    font-size: 15px;
 }
 
-.btn-deploy a{
+.btn-deploy a {
    background: black;
    color: #fff;
    padding: 8px 17px;
@@ -128,7 +132,7 @@
    letter-spacing: 1px;
 }
 
-.btn-deploy a:hover{
+.btn-deploy a:hover {
    background: #fff;
    color: #000;
    outline: 1px solid #000;
@@ -142,17 +146,18 @@
    width: 100%;
 }
 
-
 @media screen and (max-width: 590px) {
    .project-git div {
       flex-wrap: wrap;
    }
+
    .project-git img {
       width: 100%;
       height: auto;
    }
 
-   .img-project, .desc-project {
+   .img-project,
+   .desc-project {
       height: auto;
       max-width: 100%;
       width: 100%;
@@ -168,14 +173,14 @@
       justify-content: center;
       align-items: center;
       z-index: 1000;
-  }
-  
-  .showImage img {
+   }
+
+   .showImage img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      z-index: 999;  
-  }
+      z-index: 999;
+   }
 
    .showImage span {
       top: 4vh;
@@ -183,7 +188,7 @@
       padding: 15px 10px;
    }
 
-  .closeMessage {
+   .closeMessage {
       position: absolute;
       bottom: 2rem;
       text-align: center;
@@ -193,5 +198,5 @@
       padding: 0.5rem 1rem;
       border-radius: 10px;
       z-index: 900;
-  }
+   }
 }
