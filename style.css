@@ -17,7 +17,7 @@ header {
 
 .description, .about-me,.description-ft {
     display: flex;
-    gap: 30px;
+    gap: 3.5rem;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -36,13 +36,13 @@ header {
 
 .about-me {
     flex-direction: row;
-    width: 100%;
+    width: 92%;
     position: relative;
     padding: 10px;
 }
 
 .description, .description-ft {
-    box-shadow: 1px 1px 15px 8px var(--border-shadow);
+    box-shadow: 1px 1px 17px 7px var(--border-shadow);
     border-radius: 20px;
     padding: 30px;
     align-items: center;
@@ -144,6 +144,12 @@ header {
     
 }
 @media screen and (max-width: 490px) {
+    .page {
+        margin-top: 20%;
+    }
+    .picture-marcio img {
+        max-width: 180px;
+    }
     .apresentation {
         font-size: 15pt;
     }
