@@ -129,9 +129,12 @@ header {
     max-width: 250px;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
     header {
         height: 100%;
+    }
+    .page {
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 580px) {
@@ -144,9 +147,6 @@ header {
     
 }
 @media screen and (max-width: 490px) {
-    .page {
-        margin-top: 20%;
-    }
     .picture-marcio img {
         max-width: 180px;
     }

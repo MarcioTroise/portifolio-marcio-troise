@@ -1,3 +1,47 @@
+.container {
+    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact--hd {
+    font-family: "Saira Condensed", sans-serif;
+    color: #fff;
+    font-size: 14pt;
+    overflow: auto;
+    z-index: 99;
+    transition: all 1s ease-in-out;
+    display: block;
+
+    width: 18vw;
+}
+
+.container-menu {
+    box-shadow: inset -4px 1px 20px 0px #4a4964;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    width: 18vw;
+    position: fixed;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(09px)grayscale(1);
+    border-radius: 0 0 14px 14px;
+    padding: 10px;
+}
+
+.btn-menu, .container-menu {
+    background: #03002bc9;
+}
+
 #btnOpenClose  {
     display: none;
 }
@@ -91,7 +135,7 @@
     width: 150px;
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
-    box-shadow: 0px 5px 5px 0px var(--dark);
+    box-shadow: 0px 5px 5px 0px #4a4964;
 }
 
 .box p {
@@ -158,48 +202,6 @@
     text-align: right;
     padding-left: 15px;
 }
-.container {
-    gap: 20px; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-menu {
-    box-shadow: inset -2px -5px 20px 0px var(--border-shadow);
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    left: 0;
-    backdrop-filter: blur(12px);
-    border-radius: 0 0 14px 14px;
-}
-
-.contact--hd {
-    position: absolute;
-    font-family: "Saira Condensed", sans-serif;
-    color: #fff;
-    font-size: 13pt;
-    padding: 20px 15px;
-    width: 100%;
-    overflow: auto;
-    z-index: 99;
-    transition: all 1s ease-in-out;
-}
-
-.contact--hd, .btn-menu, .container-menu {
-    top: 0;
-    background: #03002b9a;
-}
 
 .my-email {
     font-size: 16px;
@@ -233,9 +235,6 @@
     .contact--hd  {
         display: none;
         position: fixed;
-    }
-    .btn-menu, .container-menu {
-        background: #03002bc9;
     }
     #btnOpenClose, .container-menu, .contact--hd, .page{
         width: 100%;
