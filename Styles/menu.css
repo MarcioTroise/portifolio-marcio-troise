@@ -20,7 +20,7 @@
 }
 
 .container-menu {
-    box-shadow: inset -4px 1px 20px 0px #4a4964;
+    box-shadow: inset -4px 1px 20px 0px var(--border-shadow);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -33,13 +33,13 @@
     flex-wrap: wrap;
     left: 0;
     top: 0;
-    backdrop-filter: blur(09px)grayscale(1);
-    border-radius: 0 0 14px 14px;
+    backdrop-filter: hue-rotate(76deg)blur(09px);
+    border-radius: 0 14px 14px 0;
     padding: 10px;
 }
 
 .btn-menu, .container-menu {
-    background: #03002bc9;
+    background: #00c7766e;
 }
 
 #btnOpenClose  {
@@ -110,7 +110,7 @@
 .themes img {
     border-radius: 35%;
     width: 2.5em;
-    height: 2.3em;
+    height: 2.15em;
     padding: 5px;
 }
 
@@ -121,7 +121,6 @@
 .intro {
     font-weight: 800;
     font-size: 3.3rem;
-    text-shadow: 0px 7px 5px #a79d44;
 }
 
 .box {
@@ -141,13 +140,13 @@
 .box p {
     background: rgba(0,0,0,.2);
     border-radius: 18px;
-    box-shadow: inset 0 10px 10px rgba(0,0,0,.5);
+    box-shadow: inset 0 10px 10px #00ff9552;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     inset: 10px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 9px #FFA500;
+    /* text-shadow: 2px 2px 9px #FFA500; */
     position: absolute;
     z-index: 10;
     display: flex;
@@ -162,7 +161,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), var(--text-btn) 20%, var(--aqua) 20%, transparent 30%, transparent 20%, transparent 45%, var(--text-btn) 70%);
+    background: repeating-conic-gradient(from var(--a), #00ff95 20%, yellow 20%, transparent 30%, transparent 20%, transparent 45%, #00ff95 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;
@@ -183,6 +182,48 @@
     border-radius: 15px;
     outline: 6px double #332e35c9;
 }
+
+.animationButton.container{
+    background: transparent;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#animeBG {
+    width: 8rem;
+    height: 3rem;
+    background-color: #282833;
+    border-radius: 40px;
+    box-shadow: inset 2px 12px 10px #000000;
+    position: relative;
+    border: 3px solid rgb(26, 26, 26);
+    cursor: pointer;
+    animation: animation-btn 2s alternate;
+}
+/* Criar objeto em JS com css e mudanca de classe com animacao via onClick */
+#animeBG::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #00ff9573;
+    border-radius: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+}
+
+.bt-transition::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #ff00008c;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* ---- */
 
 #dlw-cur {
     width: 165px;
@@ -205,6 +246,17 @@
 
 .my-email {
     font-size: 16px;
+}
+
+@keyframes animation-btn {
+    0% {
+        left: 0;
+        right: auto;
+    }
+    100% {
+        right: 0;
+        left: auto;
+    }
 }
 
 @keyframes rotate {
@@ -242,6 +294,9 @@
     .container-menu {
         height: 100vh;
         flex-direction: column;
+    }
+    .btn-menu, .container-menu {
+        background: #00105fdb;
     }
     #btnOpenClose {
         border-radius: 0;
