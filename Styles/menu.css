@@ -198,10 +198,10 @@
     position: relative;
     border: 3px solid rgb(26, 26, 26);
     cursor: pointer;
-    animation: animation-btn 2s alternate;
+
+
 }
-/* Criar objeto em JS com css e mudanca de classe com animacao via onClick */
-#animeBG::before {
+.bt-transition::before {
     content: '';
     width: 50%;
     height: 100%;
@@ -209,21 +209,19 @@
     border-radius: 40px;
     position: absolute;
     left: 0;
+    right: 100%;
     top: 0;
     bottom: auto;
+    transition: .5s;
+    animation: animation-btn .4s ease-in-out;
 }
 
-.bt-transition::after {
-    content: '';
-    width: 50%;
-    height: 100%;
+.bt-transition.active::before {
     background: #ff00008c;
-    border-radius: 40px;
-    position: absolute;
     right: 0;
-    top: 0;
+    position: absolute;
+    left: 50%;
 }
-/* ---- */
 
 #dlw-cur {
     width: 165px;
@@ -255,7 +253,7 @@
     }
     100% {
         right: 0;
-        left: auto;
+        left: 50%;
     }
 }
 

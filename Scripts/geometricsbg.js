@@ -55,3 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
       portfolio.forEach(repositionBubbles);
    });
 });
+
+
+const animeBubbles = document.querySelector(".bt-transition");
+function toggleAnimation() {
+   animeBubbles.classList.toggle('active');
+}
+
+animeBubbles.addEventListener('click', toggleAnimation);
