@@ -1,14 +1,6 @@
 
 @import "Styles/variables.css";
 
-header { 
-    grid-area: top;
-    min-height: 90vh;
-    height: 100%;
-}
-.work-projects { grid-area: mid; }
-.contact--ft { grid-area: bot; }
-
 .description h1 {
     font-size: 40pt;
     padding-bottom: 20px;
