@@ -168,6 +168,30 @@
     border-radius: 20px;
 }
 
+/* Quando o idioma for ingles */
+.btn-menu, .container-menu.eng-menu {
+    background: #125db973;
+}
+.box.eng-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a), #ff2c2c 20%, #eeeeee 20%, transparent 30%, transparent 20%, transparent 45%, #ff2c2c 70%);
+    animation: animate 2.5s linear infinite;
+    animation-play-state: paused; 
+    animation-delay: -0.5s;
+    border-radius: 20px;
+}
+.eng-box p {
+    box-shadow: inset 0 10px 10px #003fc9;
+}
+
+.bt-transition.eng-transition::before {
+    background: #003fc9;
+}
+/* -- fim estilo ingles -- ff4949 */
+
 .box:hover,
 .box:hover::before {
     animation-play-state: running;

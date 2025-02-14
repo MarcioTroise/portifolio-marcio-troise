@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,56 +11,74 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body> 
+
+<body>
     <div id="portfolio">
-        <button id="btnOpenClose" class="btn-menu" >
+        <button id="btnOpenClose" class="btn-menu">
             <span class="line l-left"></span>
             <span class="line l-left"></span>
             <span class="line l-left"></span>
-            menu 
+            menu
             <span class="line l-right"></span>
             <span class="line l-right"></span>
             <span class="line l-right"></span>
         </button>
         <nav id="sideMenu" class="contact--hd" style="display: block;">
-            <div class="container-menu">
-                
-                <div class="themes">
-                    <a href="index.html" id="bra-language" class="language-layout">
-                        <img src="Images/flag-brazil.PNG" alt="BRA language" >
-                    </a>
-                    <a href="index-eng.html" id="eua-language" class="language-layout">
-                        <img src="Images/flag-eua.PNG" alt="USA language" >
-                    </a>
+            <div class="container-menu eng-menu">
+                <div>
+                    <small>Traduzir...</small>
+                    <div class="themes">
+                        <a href="index.html" id="bra-language" class="language-layout">
+                            <img src="Images/flag-brazil.PNG" alt="BRA language">
+                        </a>
+                        <a href="index-eng.html" id="eua-language" class="language-layout">
+                            <img src="Images/flag-eua.PNG" alt="USA language">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="intro">
-                    <span>Marcio Troise</span>
+                    <span>Marcio A. Troise</span>
                 </div>
 
                 <div class="container-port">
                     <div class="container boxes">
                         <a href="#portfolio" style="text-decoration: none;">
-                            <div class="box"><p>About me</p></div>
+                            <div class="box eng-box">
+                                <p>About me</p>
+                            </div>
                         </a>
                         <a href="#work-projects" style="text-decoration: none;">
-                            <div class="box"><p>Projects</p></div>
+                            <div class="box eng-box">
+                                <p>Projects</p>
+                            </div>
                         </a>
-                        <div class="box" id="dlw-cur" >
+                        <div class="box eng-box" id="dlw-cur">
                             <p><i class="fa fa-download"></i></p>
-                            <p>Download CCM</p>
+                            <p><a href="curriculo-marcio-troise.pdf" download="curriculo-marcio-troise.pdf" style="text-decoration: none; color: #fff;">
+                                Download CV
+                            </a></p>
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="animationButton container eng-disable-anime">
+                    <small>Disable animation background</small>
+                    <div id="animeBG" class="bt-transition eng-transition"></div>
+                </div>
+
                 <span class="socials head">
-                    <a href="https://www.linkedin.com/in/marcio-troise-a79531a4/" target="_blank" style="color: blue;"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/marciotroise" target="_blank" style="color: black;"><i class="fab fa-github"></i></a>
-                    <a href="https://web.whatsapp.com/send?phone=5511986922549" target="_blank" style="color: green;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/marcio-troise-a79531a4/" target="_blank"
+                        style="color: blue;"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/marciotroise" target="_blank" style="color: black;"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://web.whatsapp.com/send?phone=5511986922549" target="_blank" style="color: green;"><i
+                            class="fab fa-whatsapp"></i></a>
                 </span>
             </div>
         </nav>
@@ -73,11 +92,9 @@
                     </div>
                     <div class="apresentation">
                         <h1>Marcio Antonio Troise</h1>
-                        <p>Web Developer Frontend (2 years)</p>
-                        <p >
-                            Graduated in Systems Analysis and Development (2023)
-                        </p>
-                        <p>From: São Paulo - SP</p>
+                        <p>Frontend Developer (2 years)</p>
+                        <p> Graduated in Systems Analysis and Development (2023)</p>
+                        <p>Resident: São Paulo - SP</p>
                         <span class="my-email">
                             <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; mtroise15@gmail.com
                         </span>
@@ -85,26 +102,27 @@
                 </div>
                 <div class="description-text">
                     <ul>
-                        <li>Knowledge in maintaining and developing layouts for websites in <b>Html</b>, <b>JavaScript</b>, and through the <b>VueJS</b> and <b>ReactJS</b></li>
+                        <li>Knowledge in maintenance and development of layouts for websites in <b>Html</b>,
+                            <b>JavaScript</b>, and through the frameworks <b>VueJS</b> and <b>ReactJS</b></li> 
                         <li>Styling with <b>CSS</b>, <b>Stylus</b> and <b>SASS</b>.</li>
                         <li>Creation and styling in <b>Wordpress</b>.</li>
-                        <li>Creation of tables.</li>
+                        <li>Container logic with Docker.</li>
                         <li>Responsive layouts (Desktop | Mobile)</li>
                     </ul>
-                    
+
                 </div>
 
                 <div class="aboutMe">
                     <p class="description-text">
-                        <em>PS: Layout, colors, animation and everything else involved in this portfolio was developed and created by me trying to innovate and demonstrate a little of my work</em>
+                        <em>NOTE: Layout, colors, animation and everything else involved in this portfolio was developed and created for me trying to innovate and demonstrate a little of my work.</em>
                     </p>
                     <p>&nbsp;<br></p>
                     <p class="description-text">
-                        <em>"Frontend Developer. Confidence in technological development, seeking to improve my knowledge to always try to collaborate in web evolution!"</em>
+                        <em>"Frontend Developer. Confidence in technological development, seeking to improve my knowledge to always try to contribute to the evolution of the web!"</em>
                     </p>
                 </div>
-                
-                
+
+
                 <div class="tec-tables">
                     <div class="work-tables">
                         <div class="frameworks html-bg" data-title="Html">
@@ -139,7 +157,7 @@
             </header>
 
             <section class="description" id="work-projects">
-                <h2>PROJETOS</h2>
+                <h2>PROJECTS</h2>
                 <div class="project-git">
                     <ul>
                         <li>
@@ -152,8 +170,8 @@
                                 </div>
                                 <div class="desc-project">
                                     <p>
-                                        Site demostrativo de games para desktop e mobile, estilo site de filmes e series
-                                        para pesquisa e novidades.
+                                        Demo site for desktop and mobile games, styled as a movie and series website
+                                        for research and news.
                                     </p>
                                     <div>
                                         <span class="html-bg">
@@ -365,14 +383,19 @@
                 </div>
             </section>
 
-            <footer class="description-ft contact--ft"> 
-                <b>&copy; Marcio Troise, SP - 2024</b>
+            <footer class="description-ft contact--ft">
+                <b>&copy; Marcio Troise, SP - 2025</b>
                 <span class="socials social-footer">
-                    <a href="https://www.linkedin.com/in/marcio-troise-a79531a4/" target="_blank" style="color: blue;"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/marciotroise" target="_blank" style="color: purple;"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/marciotroise" target="_blank" style="color: black;"><i class="fab fa-github"></i></a>
-                    <a href="https://web.whatsapp.com/send?phone=5511986922549" target="_blank" style="color: green;"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:mtroise15@gmail.com" target="_blank" style="color: red;"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/marcio-troise-a79531a4/" target="_blank"
+                        style="color: blue;"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/marciotroise" target="_blank" style="color: purple;"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/marciotroise" target="_blank" style="color: black;"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://web.whatsapp.com/send?phone=5511986922549" target="_blank" style="color: green;"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:mtroise15@gmail.com" target="_blank" style="color: red;"><i class="fa fa-envelope"
+                            aria-hidden="true"></i></a>
                 </span>
             </footer>
         </div>
@@ -381,4 +404,5 @@
         <script src="Scripts/geometricsbg.js"></script>
     </div>
 </body>
+
 </html>
