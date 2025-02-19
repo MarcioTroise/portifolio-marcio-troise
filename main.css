@@ -168,6 +168,9 @@
 .html-bg {
     background-color: var(--html-bg);
 }
+.react-project {
+    background-color: var(--react-project);
+}
 .css-bg {
     background-color: var(--css-bg);
 }

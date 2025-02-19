@@ -6,7 +6,7 @@ function openImage(nImage) {
     if (!createPrhase) {
         createPrhase = document.createElement("span");
         createPrhase.className = "closeMessage";
-        createPrhase.innerText = "Click na imagem para fechar...";
+        createPrhase.innerText = "X";
         createPrhase.style.display = "none";
         pictures.appendChild(createPrhase);
     }
