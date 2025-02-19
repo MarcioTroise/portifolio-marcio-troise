@@ -9,37 +9,33 @@ function animationFunction() {
    // Seleciona todos os elementos com ID #portfolio (caso existam múltiplos)
    const portfolio = document.querySelectorAll('#portfolio');
 
-   // Função que cria um elemento animado dentro do container
-   function createcirclebody(container) {
-      // Cria um novo elemento div
+   function createcirclebody() {
       const circlebody = document.createElement('div');
 
       // Define um tamanho aleatório para o elemento (entre 20px e 100px)
       const size = Math.random() * 80 + 20;
-
-      // Aplica tamanho e classe CSS ao elemento
       circlebody.style.height = `${size}px`;
       circlebody.style.width = `${size}px`;
       circlebody.classList.add('circle');
 
-      // Define animação de movimento vertical com tempo aleatório
-      circlebody.style.animation = `moveUp ${Math.random() * 15 + 5}s linear infinite`;
+      // Animação de descida com tempo aleatório
+      circlebody.style.animation = `moveDown ${Math.random() * 12 + 5}s linear infinite`;
       circlebody.style.animationDelay = `${Math.random() * 10}s`;
 
-      // Define uma posição inicial aleatória dentro do container
-      const posX = Math.random() * (container.clientWidth - size);
+      // Garante que as bolhas fiquem dentro do #portfolio
+      const portfolio = document.querySelector('#portfolio');
+      const posX = Math.random() * (portfolio.clientWidth - size);
       circlebody.style.left = `${posX}px`;
-      circlebody.style.top = `${container.clientHeight}px`; // Começa de baixo
+      circlebody.style.top = `-100px`; // Começa fora da tela, acima do #portfolio
 
-      // Define uma cor de fundo aleatória
+      // Define cor aleatória
       const colors = ['#250937f2', '#0188bd', '#6dfff3'];
       circlebody.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 
-      // Adiciona a classe circlebody ao elemento
       circlebody.classList.add('circlebody');
 
-      // Adiciona o elemento ao container
-      container.appendChild(circlebody);
+      // Adiciona a bolha ao container
+      portfolio.appendChild(circlebody);
    }
 
    // Para cada container encontrado, cria 180 elementos animados

@@ -139,6 +139,9 @@
     
 }
 @media screen and (max-width: 490px) {
+    .page {
+        padding: 5em 2.2em 0;
+    }
     .picture-marcio img {
         max-width: 180px;
     }
