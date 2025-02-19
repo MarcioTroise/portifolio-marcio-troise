@@ -317,8 +317,9 @@
         height: 100vh;
         flex-direction: column;
     }
-    .btn-menu, .container-menu {
-        background: #00105fdb;
+    .btn-menu, .container-menu,
+    .btn-menu, .container-menu.eng-menu {
+        background: #081147c9;
     }
     #btnOpenClose {
         border-radius: 0;
