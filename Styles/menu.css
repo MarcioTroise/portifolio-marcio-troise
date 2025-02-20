@@ -8,13 +8,12 @@
 }
 
 .contact--hd {
+    display: block;
     font-family: "Saira Condensed", sans-serif;
     color: #fff;
     font-size: 14pt;
     overflow: auto;
     z-index: 99;
-    transition: all 1s ease-in-out;
-    display: block;
 
     width: 18vw;
 }
@@ -45,6 +44,7 @@
 #btnOpenClose  {
     display: none;
 }
+
 #btnOpenClose span {
     width: 25px;
     height: 4px;
@@ -222,9 +222,8 @@
     position: relative;
     border: 3px solid rgb(26, 26, 26);
     cursor: pointer;
-
-
 }
+
 .bt-transition::before {
     content: '';
     width: 50%;
@@ -233,11 +232,9 @@
     border-radius: 40px;
     position: absolute;
     left: 0;
-    right: 100%;
     top: 0;
     bottom: auto;
     transition: .5s;
-    animation: animation-btn .4s ease-in-out;
 }
 
 .bt-transition.active::before {
@@ -268,17 +265,6 @@
 
 .my-email {
     font-size: 16px;
-}
-
-@keyframes animation-btn {
-    0% {
-        left: 0;
-        right: auto;
-    }
-    100% {
-        right: 0;
-        left: 50%;
-    }
 }
 
 @keyframes rotate {
@@ -334,7 +320,6 @@
         flex-wrap: wrap;
     }
 }
-
 @media screen and (min-width: 980px){
     #sideMenu {
         display: block !important;

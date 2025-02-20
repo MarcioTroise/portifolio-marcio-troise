@@ -1,23 +1,26 @@
-// Condição de quando clicar no botão do menu
+// Seleciona os elementos do menu
 const toggleButton = document.getElementById("btnOpenClose");
-const sideMenu = document.getElementById('sideMenu');
-const page = document.getElementById("portfolio")
-const menu = document.querySelector(".contact--hd");
-
-// menu.classList.remove("hiden") // Menu Hiden
+const sideMenu = document.getElementById("sideMenu");
+const menuLinks = document.querySelectorAll("#sideMenu a"); // Seleciona todos os links dentro do menu
 
 // Função para alternar a visibilidade do menu
 function toggleMenu() {
-    sideMenu.style.transition ='2s'
-    toggleButton.classList.toggle('rotate-menu');
-    if (sideMenu.style.display === 'block') 
-      { // Esconde o menu se ele estiver visível     
+    toggleButton.classList.remove('rotate-menu');
+    if (sideMenu.style.display === 'block') { // Esconde o menu se ele estiver visível     
         sideMenu.style.display = 'none';
-    }
-    else { // Mostra o menu se ele estiver escondido
+        toggleButton.classList.toggle('rotate-menu');
+    } else { // Mostra o menu se ele estiver escondido
         sideMenu.style.display = 'block'; 
-    } 
+    }
 }
 
 // Adiciona o evento de clique ao botão para alternar o menu
 toggleButton.addEventListener('click', toggleMenu);
+
+// Adiciona o evento de clique a cada link dentro do menu para fechá-lo
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        sideMenu.style.display = 'none';
+        toggleButton.classList.toggle('rotate-menu');
+    });
+});
