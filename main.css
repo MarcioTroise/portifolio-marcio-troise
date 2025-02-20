@@ -2,9 +2,15 @@
 @import "Styles/variables.css";
 
 .description h1 {
-    font-size: 40pt;
-    padding-bottom: 20px;
-    text-shadow: 3px 3px 2px var(--dark);
+    font-size: 36pt;
+    text-transform: uppercase;
+    font-family: "Saira Condensed", sans-serif;
+    padding-left: 20px;
+    text-shadow: 3px 3px 2px #cfcfcf;
+    color: var(--text);
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(184,220,228,0.7231267507002801) 0%, rgba(211,223,225,0.5998774509803921) 51%, rgba(219,229,231,0.17130602240896353) 100%);
+    margin: 0 0 20px;
 }
 
 .description, .about-me,.description-ft {
