@@ -32,7 +32,7 @@
     flex-wrap: wrap;
     left: 0;
     top: 0;
-    backdrop-filter: hue-rotate(76deg)blur(09px);
+    backdrop-filter: hue-rotate(8deg) blur(09px);
     border-radius: 0 14px 14px 0;
     padding: 10px;
 }
@@ -146,7 +146,6 @@
     font-weight: bold;
     inset: 10px;
     text-transform: uppercase;
-    /* text-shadow: 2px 2px 9px #FFA500; */
     position: absolute;
     z-index: 10;
     display: flex;
@@ -170,7 +169,7 @@
 
 /* Quando o idioma for ingles */
 .btn-menu, .container-menu.eng-menu {
-    background: #125db973;
+    background: #5a22ca6b;
 }
 .box.eng-box::before {
     content: "";
