@@ -111,8 +111,8 @@
    padding: 8px 17px;
    font-weight: bold;
    max-width: 100%;
-   text-decoration: none;
    letter-spacing: 1px;
+   text-shadow: none;
 }
 
 .btn-deploy a:hover {

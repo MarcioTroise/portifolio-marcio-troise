@@ -52,7 +52,7 @@
 .picture-marcio img{
     width: 250px;
     max-width: 100%;
-    box-shadow: 0px 2px 9px 0px #150070d5;
+    box-shadow: -1px 3px 6px 0px #000000d5;
     border-radius: 50%;
 }
 
