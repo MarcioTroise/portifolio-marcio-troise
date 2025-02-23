@@ -41,7 +41,7 @@ function animationFunction() {
    // Para cada container encontrado, cria 180 elementos animados
    portfolio.forEach(container => {
       if (!animationEnabled) return; // Evita criar animações se já estiver desativado
-      for (let i = 0; i < 180; i++) {
+      for (let i = 0; i < 220; i++) {
          createcirclebody(container);
       }
    });

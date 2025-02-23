@@ -116,7 +116,7 @@ a {
  /* Animação dos Circulos internos */
  @keyframes moveDown {
     from {
-        top: -2vh;
+        top: -5rem;
     }
     to {
         top: 100%;

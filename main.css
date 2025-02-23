@@ -40,7 +40,7 @@
 }
 
 .description, .description-ft {
-    box-shadow: 1px 1px 17px 7px var(--border-shadow);
+    box-shadow: 1px 1px 17px 5px var(--border-shadow);
     border-radius: 20px;
     padding: 30px;
     align-items: center;
