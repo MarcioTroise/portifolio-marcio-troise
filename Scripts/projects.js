@@ -5,7 +5,6 @@ function openImage(nImage) {
     let createPrhase = pictures.querySelector(".closeMessage");
     if (!createPrhase) {
         createPrhase = document.createElement("span");
-        createPrhase.className = "closeMessage";
         createPrhase.innerText = "X";
         createPrhase.style.display = "none";
         pictures.appendChild(createPrhase);
