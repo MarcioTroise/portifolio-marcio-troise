@@ -24,3 +24,13 @@ menuLinks.forEach(link => {
         toggleButton.classList.toggle('rotate-menu');
     });
 });
+
+//Dark mode
+const toggleLightDark = document.getElementById("darkModeToggle");
+
+toggleLightDark.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleLightDark.textContent = document.body.classList.contains("dark-mode") 
+        ? "☀️ Light Mode" 
+        : "🌙 Dark Mode";
+});

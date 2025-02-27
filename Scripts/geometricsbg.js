@@ -13,14 +13,14 @@ function animationFunction() {
       const circlebody = document.createElement('div');
 
       // Define um tamanho aleatório para o elemento (entre 20px e 100px)
-      const size = Math.random() * 80 + 20;
+      const size = Math.random() * 250 + 20;
       circlebody.style.height = `${size}px`;
       circlebody.style.width = `${size}px`;
       circlebody.classList.add('circle');
 
       // Animação de descida com tempo aleatório
-      circlebody.style.animation = `moveDown ${Math.random() * 12 + 5}s linear infinite`;
-      circlebody.style.animationDelay = `${Math.random() * 10}s`;
+      circlebody.style.animation = `moveDown ${Math.random() * 15 + 5}s linear infinite`;
+      circlebody.style.animationDelay = `${Math.random() * 2}s`;
 
       // Garante que as bolhas fiquem dentro do #portfolio
       const portfolio = document.querySelector('#portfolio');

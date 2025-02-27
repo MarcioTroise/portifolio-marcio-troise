@@ -13,19 +13,18 @@
     color: #fff;
     font-size: 14pt;
     overflow: auto;
+    width: 17vw;
     z-index: 99;
-
-    width: 18vw;
 }
 
 .container-menu {
-    box-shadow: inset -4px 1px 20px 0px var(--border-shadow);
+    box-shadow: inset -3px -1px 5px 0px #b3b3b3;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     height: 100vh;
-    width: 18vw;
+    width: 16vw;
     position: fixed;
     justify-content: space-around;
     align-content: center;
@@ -34,11 +33,18 @@
     top: 0;
     backdrop-filter: hue-rotate(8deg) blur(09px);
     border-radius: 0 14px 14px 0;
-    padding: 10px;
+    padding: 20px 20px 50px;
+}
+
+.picture-marcio img{
+    width: 120px;
+    max-width: 100%;
+    box-shadow: -1px 3px 6px 0px #1a1a1acc;
+    border-radius: 50%;
 }
 
 .btn-menu, .container-menu {
-    background: #00c7766e;
+    background: #00104169;
 }
 
 #btnOpenClose  {
@@ -160,7 +166,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), #00ff95 20%, yellow 20%, transparent 30%, transparent 20%, transparent 45%, #00ff95 70%);
+    background: repeating-conic-gradient(from var(--a), var(--sm-smooth) 20%, yellow 20%, transparent 30%, transparent 20%, transparent 45%, var(--sm-smooth) 70%);
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;
@@ -169,7 +175,7 @@
 
 /* Quando o idioma for ingles */
 .btn-menu, .container-menu.eng-menu {
-    background: #5a22ca6b;
+    background: #8d56c76b;
 }
 .box.eng-box::before {
     content: "";
@@ -287,6 +293,12 @@
     }
     100%{
         --a: 360deg;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .picture-marcio img {
+        display: none;
     }
 }
 
