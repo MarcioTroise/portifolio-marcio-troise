@@ -12,7 +12,7 @@
     --border-shadow: #8ed2e1;
     --button: #cfcaff;
     --aqua:#73b3ff;
-    --text: #03002b;
+    --text: #020024;
     --text-btn: #6dfff3;
     --white: #ffffff;
 
@@ -101,6 +101,10 @@ a, button {
     color: inherit;
     cursor: pointer;
     font-size: initial;
+}
+
+.disabled {
+    cursor: no-drop;
 }
 
 #portfolio {

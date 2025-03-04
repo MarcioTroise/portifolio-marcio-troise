@@ -108,7 +108,7 @@
     background: #c7cbff;
     border-radius: 50%;
     text-decoration: none;
-    text-shadow: 0px 20px 5px #fff;
+    text-shadow: 1px 20px 5px #00000078;
     scale: 1.2;
 }
 .socials a i {
