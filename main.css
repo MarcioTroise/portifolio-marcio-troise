@@ -6,10 +6,10 @@
     text-transform: uppercase;
     font-family: "Saira Condensed", sans-serif;
     padding-left: 20px;
-    text-shadow: 3px 3px 2px #cfcfcf73;
-    color: var(--text);
+    text-shadow: 3px 3px 2px #2c2c2c73;
+    color: #f4f4f4;
     border-radius: 8px;
-    background: linear-gradient(90deg, #df6363b8 0%, #e1d3d396 51%, #e7e6db14 100%);
+    background: linear-gradient(90deg, var(--sm-smooth) 0%, #c7cceb86 51%, #e7e6db14 100%);
     margin: 0 0 20px;
 }
 
@@ -110,6 +110,9 @@
     text-decoration: none;
     text-shadow: 1px 20px 5px #00000078;
     scale: 1.2;
+}
+.dark-mode .socials a{
+    text-shadow: 1px 20px 5px #bebebe78;
 }
 .socials a i {
     padding: 5px 6px;

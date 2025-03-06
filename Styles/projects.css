@@ -9,7 +9,7 @@
    width: 100%;
    box-shadow: 3px 4px 8px var(--text);
    border-radius: 2%;
-   background: linear-gradient(180deg, var(--white) 0%,  var(--white) 25%, var(--white) 75%, var(--text));
+   background: linear-gradient(180deg, var(--button) 0%,  var(--button) 25%, var(--button) 75%, #020024);
    padding: 15px;
    display: flex;
    flex-direction: column;
@@ -17,6 +17,11 @@
    align-items: center;
    gap: 10px;
    height: 100%;
+}
+
+.project-git li p,
+.project-git li h3 {
+   color: #000;
 }
 
 .project-git .container-project {
@@ -75,7 +80,7 @@
    right: 0;
    text-align: center;
    font-size: 24pt;
-   color: #fff;
+   /* color: #fff; */
 }
 
 /* --- Fim ação das imagens */
@@ -143,8 +148,9 @@
 
 .languages .usable p {
    margin: 0 10px 0 0;
-   color: var(--white);
-   text-shadow: 1px 2px 6px var(--text);
+   color: #010025;
+   text-shadow: 1px 2px 6px #f4f4f4;
+   font-weight: bold;
 }
 
 .languages .usable span {
