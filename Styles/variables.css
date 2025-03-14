@@ -8,14 +8,13 @@
 
     --dark: #8482ff;
     --sm-smooth: #3835ff;
-    --background-color: #dce3ff;
+    --background-color: #cbd5ff;
     --border-shadow: #8ed2e1;
-    --button: #cacfff;
+    --button: #b4c6ec;
     --aqua:#73b3ff;
     --text: #020024;
     --text-btn: #6dfff3;
     --white: #ffffff;
-
     --html-bg: #c9003cc4 ;
     --react-project: #005bb1;
     --css-bg: #5c00d4c9 ;
@@ -31,7 +30,7 @@
 /* Tema Escuro */
 .dark-mode {
     --background-color: #222831;
-    --text: #f4f4f4;
+    --text: #f0f0f0;
     --white: #010025;
     --container-bg: rgba(255, 255, 255, 0.05);
     --shadow-color: rgba(0, 0, 0, 0.3);
@@ -72,7 +71,6 @@ body {
 }
 
 header, section, footer {
-    background-color: var(--background);
     margin: auto;
     width: 100%;
     position: relative;
@@ -119,18 +117,17 @@ a, button {
     background: var(--background-color);
     color: var(--text);
     transition: all 0.3s ease-in-out;
-
 }
 
 /* Circulos internos */
 .circlebody {
-    filter: blur(4px);
+    filter: blur(5px);
     overflow: hidden;
     position: absolute;
 }
 
 .circle {
-    opacity: .051;
+    opacity: .04;
     z-index: -1;
     border-radius: 10%;
     border: 4px solid transparent;
@@ -143,7 +140,7 @@ a, button {
 /* Animação dos Circulos internos */
 @keyframes moveDown {
     from {
-        top: -20%;
+        top: -30vh;
     }
     to {
         top: 100%;
