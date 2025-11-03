@@ -30,7 +30,6 @@
     position: fixed;
     justify-content: space-around;
     align-content: center;
-    flex-wrap: wrap;
     left: 0;
     top: 0;
     backdrop-filter: hue-rotate(8deg) blur(09px);

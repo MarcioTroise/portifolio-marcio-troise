@@ -8,24 +8,25 @@
     font-size: 62.5%;
 
     --dark: #8482ff;
-    --sm-smooth: #3835ff;
-    --background-color: #cbd5ff;
+    --sm-smooth: #2a4453;
+    --background-color: #2a4453;
+    --bg-container: #e8faff;
     --border-shadow: #8ed2e1;
     --button: #b4c6ec;
     --aqua:#73b3ff;
     --text: #020024;
     --text-btn: #6dfff3;
     --white: #ffffff;
-    --html-bg: #c9003cc4 ;
+    --html-bg: #c9003cc4;
     --react-project: #005bb1;
-    --css-bg: #5c00d4c9 ;
-    --js-bg: #ffff00c5 ;
-    --react-bg: #00ccffa4 ;
-    --vue-bg: #29700098 ;
-    --sass-bg: #d300b7b7 ;
-    --node-bg: #1f9c00ce ;
-    --wp-bg: #0053cfce ;
-    --docker-bg: #acacac ;
+    --css-bg: #5c00d4c9;
+    --js-bg: #ffff00c5;
+    --react-bg: #00ccffa4;
+    --vue-bg: #29700098;
+    --sass-bg: #d300b7b7;
+    --node-bg: #1f9c00ce;
+    --wp-bg: #0053cfce;
+    --docker-bg: #acacac;
 }
 
 /* Tema Escuro */
