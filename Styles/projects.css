@@ -11,7 +11,7 @@
    width: 100%;
    box-shadow: 3px 4px 11px var(--text);
    border-radius: 2%;
-   background: linear-gradient(180deg, #5300bf6b 0%,  var(--button) 25%, var(--button) 75%, #3d008d80);
+   background: linear-gradient(180deg, #8861bb6b 0%,  var(--button) 25%, var(--button) 75%, #3d008d80);
    padding: 15px;
    display: flex;
    flex-direction: column;

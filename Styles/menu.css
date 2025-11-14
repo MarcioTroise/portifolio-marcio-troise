@@ -4,7 +4,7 @@
     gap: 20px; 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -19,8 +19,13 @@
     z-index: 99;
 }
 
+.boxes a {
+    width: 100%;
+    box-shadow: 0px 0px 3px;
+    border-radius: 10px;
+}
 .container-menu {
-    box-shadow: inset -3px -1px 5px 0px #b3b3b3;
+    box-shadow: inset -3px -1px 5px 0px #b3b3b398;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -33,7 +38,7 @@
     left: 0;
     top: 0;
     backdrop-filter: hue-rotate(8deg) blur(09px);
-    border-radius: 0 14px 14px 0;
+    border-radius: 0 10px 10px 0;
     padding: 20px 20px 50px;
 }
 
@@ -68,7 +73,7 @@
 }
 #btnOpenClose .l-right { 
     background: linear-gradient(90deg, #ffffff 25%,var(--text-btn) 75%);
-    right: 3%; 
+    right: 3%;
 }
 
 #btnOpenClose .line:nth-child(1),
@@ -106,7 +111,7 @@
     color: #ffffff;
     text-align: center;
     position: fixed;
-    width: 14%;
+    width: 114%;
     z-index: 100;
 }
 
@@ -133,32 +138,32 @@
 .box {
     display: flex;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     justify-content: center;
     position: relative;
     cursor: pointer;
     height: 45px;
-    width: 150px;
+    width: 100%;
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
-    box-shadow: 0px 5px 5px 0px #4a4964;
+    /* box-shadow: 0px 5px 5px 0px #4a4964; */
 }
 
 .box p {
     background: rgba(0,0,0,.2);
-    border-radius: 18px;
+    border-radius: 10px;
     box-shadow: inset 0 10px 10px var(--sm-smooth);
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
-    inset: 10px;
+    inset: 4px;
     text-transform: uppercase;
     position: absolute;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55%;
+    height: 100%;
     margin: 0;
 }
 
@@ -171,7 +176,28 @@
     animation: animate 2.5s linear infinite;
     animation-play-state: paused;
     animation-delay: -0.5s;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.box:hover,
+.box:hover::before {
+    animation-play-state: running;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    /* border: 3px solid #282833; */
+    background: #2b2b39;
+    border-radius: 10px;
+    /* outline: 6px double #332e35c9; */
+}
+
+.animationButton.container{
+    background: transparent;
+    gap: 10px;
+    flex-direction: column;
 }
 
 /* Quando o idioma for ingles */
@@ -187,7 +213,7 @@
     animation: animate 2.5s linear infinite;
     animation-play-state: paused; 
     animation-delay: -0.5s;
-    border-radius: 20px;
+    border-radius: 14px;
 }
 .eng-box p {
     box-shadow: inset 0 10px 10px #003fc9;
@@ -198,27 +224,6 @@
 }
 /* -- fim estilo ingles -- ff4949 */
 
-.box:hover,
-.box:hover::before {
-    animation-play-state: running;
-}
-
-.box::after {
-    content: "";
-    position: absolute;
-    inset: 6px;
-    border: 5px solid #282833;
-    background: #2b2b39;
-    border-radius: 15px;
-    outline: 6px double #332e35c9;
-}
-
-.animationButton.container{
-    background: transparent;
-    gap: 10px;
-    flex-direction: column;
-}
-
 #animeBG {
     width: 8rem;
     height: 3rem;
@@ -226,7 +231,7 @@
     border-radius: 40px;
     box-shadow: inset 2px 12px 10px #000000;
     position: relative;
-    border: 3px solid rgb(26, 26, 26);
+    border: 5px solid rgb(26, 26, 26);
     cursor: pointer;
 }
 
@@ -271,6 +276,10 @@
 
 .my-email {
     font-size: 16px;
+}
+
+.container-menu .socials a {
+    text-shadow: 1px 20px 5px #adadad78;
 }
 
 @keyframes rotate {

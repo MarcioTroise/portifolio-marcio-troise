@@ -20,7 +20,7 @@ function animationFunction() {
 
       // Animação de descida com tempo aleatório
       circlebody.style.animation = `moveDown ${Math.random() * 15 + 5}s linear infinite`;
-      circlebody.style.animationDelay = `0.1s`;
+      circlebody.style.animationDelay = `0.01s`;
 
       // Garante que as bolhas fiquem dentro do #portfolio
       const portfolio = document.querySelector('#portfolio');
@@ -29,7 +29,7 @@ function animationFunction() {
       circlebody.style.top = `-35vh`; // Começa fora da tela, acima do #portfolio
 
       // Define cor aleatória
-      const colors = ['#250937f2', '#0188bd', '#6dfff3'];
+      const colors = ['#6d0fa7ff', '#1175b8ff', '#5e6effff','#000'];
       circlebody.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 
       circlebody.classList.add('circlebody');
@@ -41,7 +41,7 @@ function animationFunction() {
    // Para cada container encontrado, cria 180 elementos animados
    portfolio.forEach(container => {
       if (!animationEnabled) return; // Evita criar animações se já estiver desativado
-      for (let i = 0; i < 220; i++) {
+      for (let i = 0; i < 250; i++) {
          createcirclebody(container);
       }
    });
